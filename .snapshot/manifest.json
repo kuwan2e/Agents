@@ -1,0 +1,2451 @@
+{
+  "createdAt": "2026-10-10T02:40:47.723Z",
+  "kind": "Independent user rules and skills snapshot",
+  "symlinks": "Dereferenced to independent copies",
+  "sources": [
+    {
+      "source": "/root/.claude/CLAUDE.md",
+      "destination": "CLAUDE.md"
+    },
+    {
+      "source": "/root/.codex/AGENTS.md",
+      "destination": "AGENTS.md"
+    },
+    {
+      "source": "/root/.agents/skills",
+      "destination": "skills/shared"
+    },
+    {
+      "source": "/root/.claude/skills",
+      "destination": "skills/claude"
+    },
+    {
+      "source": "/root/.codex/skills",
+      "destination": "skills/codex"
+    },
+    {
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills",
+      "destination": "skills/plugins/codex/pages-0.1.21"
+    },
+    {
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills",
+      "destination": "skills/plugins/codex/plugin-management-0.1.0"
+    },
+    {
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills",
+      "destination": "skills/plugins/codex/sites-1.0.0"
+    },
+    {
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills",
+      "destination": "skills/plugins/codex/work-pets-0.1.6"
+    },
+    {
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills",
+      "destination": "skills/plugins/claude/superpowers-6.4.1"
+    },
+    {
+      "source": "/root/.claude/plugins/cache/openai-codex/codex/1.0.6/skills",
+      "destination": "skills/plugins/claude/codex-1.0.6"
+    }
+  ],
+  "skippedPlugins": [
+    {
+      "plugin": "code-review@claude-plugins-official",
+      "version": "b8e53f1c05df",
+      "reason": "No skills directory; plugin commands are outside this snapshot scope."
+    }
+  ],
+  "fileCount": 398,
+  "skillCount": 49,
+  "totalBytes": 2410139,
+  "files": [
+    {
+      "path": "CLAUDE.md",
+      "source": "/root/.claude/CLAUDE.md",
+      "bytes": 3669,
+      "sha256": "396a4833cde041d08c7f8cdcf8f2d5aa34f4a21b4f0116b531517c1ee6087b9e"
+    },
+    {
+      "path": "AGENTS.md",
+      "source": "/root/.codex/AGENTS.md",
+      "bytes": 1494,
+      "sha256": "38f7a89c0a785ea28ebc59a304951f8a8fe4033d97d0e36cb6af08af57832381"
+    },
+    {
+      "path": "skills/shared/brainstorming/SKILL.md",
+      "source": "/root/.agents/skills/brainstorming/SKILL.md",
+      "bytes": 10634,
+      "sha256": "bba47904a7f6bbee3bf8a107ebbe84e65d392be683bbb898ded736b29e415f90"
+    },
+    {
+      "path": "skills/shared/brainstorming/scripts/frame-template.html",
+      "source": "/root/.agents/skills/brainstorming/scripts/frame-template.html",
+      "bytes": 7703,
+      "sha256": "fb22ba9d47f3b83b56e0a95d52a3c2727db03b0d4365078d92c850293a62457b"
+    },
+    {
+      "path": "skills/shared/brainstorming/scripts/helper.js",
+      "source": "/root/.agents/skills/brainstorming/scripts/helper.js",
+      "bytes": 2707,
+      "sha256": "e763d82f32b4ebb320be2f0d08449d3e5a0585778edf5c407c1fdab3f39976a5"
+    },
+    {
+      "path": "skills/shared/brainstorming/scripts/server.cjs",
+      "source": "/root/.agents/skills/brainstorming/scripts/server.cjs",
+      "bytes": 11218,
+      "sha256": "ea81185f581897c67d4b417eeb9bc7a158c50e0932c73047054fe53efc2683ef"
+    },
+    {
+      "path": "skills/shared/brainstorming/scripts/start-server.sh",
+      "source": "/root/.agents/skills/brainstorming/scripts/start-server.sh",
+      "bytes": 4606,
+      "sha256": "3442a54b5ee5511637d27bf696e092b72f94c2324f40b5ba4410da4dd0c23bc8"
+    },
+    {
+      "path": "skills/shared/brainstorming/scripts/stop-server.sh",
+      "source": "/root/.agents/skills/brainstorming/scripts/stop-server.sh",
+      "bytes": 1314,
+      "sha256": "f65b7634a27343eab2086bdb6c59ba78695685f471b5a577b08a8817f7c50600"
+    },
+    {
+      "path": "skills/shared/brainstorming/spec-document-reviewer-prompt.md",
+      "source": "/root/.agents/skills/brainstorming/spec-document-reviewer-prompt.md",
+      "bytes": 1748,
+      "sha256": "12cb5ed58aef41b8da6fbb505547c71ca3f5658c83b66ca6e556c936308b3189"
+    },
+    {
+      "path": "skills/shared/brainstorming/visual-companion.md",
+      "source": "/root/.agents/skills/brainstorming/visual-companion.md",
+      "bytes": 12047,
+      "sha256": "a2bc6fc47d0df1df981d02f707a16225b147f462e7059175ad2bc5e6dd29fcae"
+    },
+    {
+      "path": "skills/shared/caveman/SKILL.md",
+      "source": "/root/.agents/skills/caveman/SKILL.md",
+      "bytes": 3653,
+      "sha256": "f9c83a2b20fc3b3503af9d1ae1cf2098c9f8c3d326c203c236b160ebe81ac8f0"
+    },
+    {
+      "path": "skills/shared/caveman-commit/SKILL.md",
+      "source": "/root/.agents/skills/caveman-commit/SKILL.md",
+      "bytes": 2481,
+      "sha256": "9ea361c8617aaabb0dada200c0bbe3f3eb9e4a28d44366b1d3a6e4ef600e96e2"
+    },
+    {
+      "path": "skills/shared/caveman-compress/README.md",
+      "source": "/root/.agents/skills/caveman-compress/README.md",
+      "bytes": 5202,
+      "sha256": "a672f616b63f88d2d9bf41e4df0ab5e8e3292ffaa3142b7e62bc83a87ca5a54f"
+    },
+    {
+      "path": "skills/shared/caveman-compress/SECURITY.md",
+      "source": "/root/.agents/skills/caveman-compress/SECURITY.md",
+      "bytes": 1557,
+      "sha256": "ac3432493cfe71368a141f437bf35562eb8f4ce07ae699e5399c0cb665e02da3"
+    },
+    {
+      "path": "skills/shared/caveman-compress/SKILL.md",
+      "source": "/root/.agents/skills/caveman-compress/SKILL.md",
+      "bytes": 4507,
+      "sha256": "1c7997b306c23a34ec9998da515aff3d9a6fd7973225f0c4faeeb00b851b87f4"
+    },
+    {
+      "path": "skills/shared/caveman-compress/scripts/__init__.py",
+      "source": "/root/.agents/skills/caveman-compress/scripts/__init__.py",
+      "bytes": 224,
+      "sha256": "429c3e1c5cc5b9705f28d77f303c728304ae68693913ad3d5ce9b5a44c8ee40f"
+    },
+    {
+      "path": "skills/shared/caveman-compress/scripts/__main__.py",
+      "source": "/root/.agents/skills/caveman-compress/scripts/__main__.py",
+      "bytes": 30,
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
+    },
+    {
+      "path": "skills/shared/caveman-compress/scripts/benchmark.py",
+      "source": "/root/.agents/skills/caveman-compress/scripts/benchmark.py",
+      "bytes": 2264,
+      "sha256": "842f208bde8150d17e312eae851c9b0831533339a7c9b3562aaa5a231f40eebf"
+    },
+    {
+      "path": "skills/shared/caveman-compress/scripts/cli.py",
+      "source": "/root/.agents/skills/caveman-compress/scripts/cli.py",
+      "bytes": 1591,
+      "sha256": "74c740a128afa5cbc1db17289ff3dc0cfe331917ff9c3a532f2884299b3620f6"
+    },
+    {
+      "path": "skills/shared/caveman-compress/scripts/compress.py",
+      "source": "/root/.agents/skills/caveman-compress/scripts/compress.py",
+      "bytes": 7532,
+      "sha256": "284c78340cd30d5a4844e0e3ce5acbb559f9ba438f50bca919471fa85b409c24"
+    },
+    {
+      "path": "skills/shared/caveman-compress/scripts/detect.py",
+      "source": "/root/.agents/skills/caveman-compress/scripts/detect.py",
+      "bytes": 4038,
+      "sha256": "c57e92a43e0ce6e740c9e836d07fe46e70ed00b3d8bd5e9124f78cbb156274bd"
+    },
+    {
+      "path": "skills/shared/caveman-compress/scripts/validate.py",
+      "source": "/root/.agents/skills/caveman-compress/scripts/validate.py",
+      "bytes": 4821,
+      "sha256": "a42e60345ec4033bd71ce76e2fba7395b14d18b623657d5434b0f49443003d75"
+    },
+    {
+      "path": "skills/shared/caveman-help/SKILL.md",
+      "source": "/root/.agents/skills/caveman-help/SKILL.md",
+      "bytes": 2045,
+      "sha256": "46f86b3ff5184f4d43f0794c4f54b1b53fee284014613428f0f477e17edad06f"
+    },
+    {
+      "path": "skills/shared/caveman-review/SKILL.md",
+      "source": "/root/.agents/skills/caveman-review/SKILL.md",
+      "bytes": 2739,
+      "sha256": "9ef09065f26b9781275b5a4775e14870e331fab833efb2a2aa33f3205a2b83c3"
+    },
+    {
+      "path": "skills/shared/compress/SKILL.md",
+      "source": "/root/.agents/skills/compress/SKILL.md",
+      "bytes": 4422,
+      "sha256": "63d93d9a9e9f8da9e7864f11772ee4a714dd7253b51f55efc81b0292beb88ffc"
+    },
+    {
+      "path": "skills/shared/compress/scripts/__init__.py",
+      "source": "/root/.agents/skills/compress/scripts/__init__.py",
+      "bytes": 224,
+      "sha256": "429c3e1c5cc5b9705f28d77f303c728304ae68693913ad3d5ce9b5a44c8ee40f"
+    },
+    {
+      "path": "skills/shared/compress/scripts/__main__.py",
+      "source": "/root/.agents/skills/compress/scripts/__main__.py",
+      "bytes": 30,
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
+    },
+    {
+      "path": "skills/shared/compress/scripts/benchmark.py",
+      "source": "/root/.agents/skills/compress/scripts/benchmark.py",
+      "bytes": 2264,
+      "sha256": "842f208bde8150d17e312eae851c9b0831533339a7c9b3562aaa5a231f40eebf"
+    },
+    {
+      "path": "skills/shared/compress/scripts/cli.py",
+      "source": "/root/.agents/skills/compress/scripts/cli.py",
+      "bytes": 1591,
+      "sha256": "74c740a128afa5cbc1db17289ff3dc0cfe331917ff9c3a532f2884299b3620f6"
+    },
+    {
+      "path": "skills/shared/compress/scripts/compress.py",
+      "source": "/root/.agents/skills/compress/scripts/compress.py",
+      "bytes": 7532,
+      "sha256": "284c78340cd30d5a4844e0e3ce5acbb559f9ba438f50bca919471fa85b409c24"
+    },
+    {
+      "path": "skills/shared/compress/scripts/detect.py",
+      "source": "/root/.agents/skills/compress/scripts/detect.py",
+      "bytes": 4038,
+      "sha256": "c57e92a43e0ce6e740c9e836d07fe46e70ed00b3d8bd5e9124f78cbb156274bd"
+    },
+    {
+      "path": "skills/shared/compress/scripts/validate.py",
+      "source": "/root/.agents/skills/compress/scripts/validate.py",
+      "bytes": 4821,
+      "sha256": "a42e60345ec4033bd71ce76e2fba7395b14d18b623657d5434b0f49443003d75"
+    },
+    {
+      "path": "skills/shared/find-skills/SKILL.md",
+      "source": "/root/.agents/skills/find-skills/SKILL.md",
+      "bytes": 5446,
+      "sha256": "1e85f6f9686e145aca4a124e3b704b9bbea9aa87e08515c1e352eee70f6e6e7a"
+    },
+    {
+      "path": "skills/shared/planning-with-files/SKILL.md",
+      "source": "/root/.agents/skills/planning-with-files/SKILL.md",
+      "bytes": 27253,
+      "sha256": "a015cdfb22463327aa2f2eb685335520024a24cd8da4a6b6ca77beea252569bf"
+    },
+    {
+      "path": "skills/shared/planning-with-files/examples.md",
+      "source": "/root/.agents/skills/planning-with-files/examples.md",
+      "bytes": 4518,
+      "sha256": "450355fac69e0fac93453b6c7383c8fb9ba3470662f6c8291080028f73ce00dc"
+    },
+    {
+      "path": "skills/shared/planning-with-files/reference.md",
+      "source": "/root/.agents/skills/planning-with-files/reference.md",
+      "bytes": 8066,
+      "sha256": "f8b4edf7037a19cc4119f8cdc11dcda511da2d949328786202e0434d6044b830"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/attest-plan.ps1",
+      "source": "/root/.agents/skills/planning-with-files/scripts/attest-plan.ps1",
+      "bytes": 3950,
+      "sha256": "5a0473ddfea7c5936a8f9be30b94b23af2e37e7454057482dcb57d6b599f506c"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/attest-plan.sh",
+      "source": "/root/.agents/skills/planning-with-files/scripts/attest-plan.sh",
+      "bytes": 6500,
+      "sha256": "0189bbd5d45204b772c2338b7da7e00ad4ee81a40744dd05ade0d84547335993"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/check-complete.ps1",
+      "source": "/root/.agents/skills/planning-with-files/scripts/check-complete.ps1",
+      "bytes": 1797,
+      "sha256": "f9e5d7bc1e92a466a44fcd7de1bfa3f69174a55396af0a54e739407f75911e13"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/check-complete.sh",
+      "source": "/root/.agents/skills/planning-with-files/scripts/check-complete.sh",
+      "bytes": 2523,
+      "sha256": "290ddc6880879321fb260c7988947c643b8cadae06c77e9f9f8a9ada37abfc5c"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/init-session.ps1",
+      "source": "/root/.agents/skills/planning-with-files/scripts/init-session.ps1",
+      "bytes": 3806,
+      "sha256": "4c720adf32e7f3548b13c9c754be58531daddbcabd38a9c3b837cf75b2dbb7a2"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/init-session.sh",
+      "source": "/root/.agents/skills/planning-with-files/scripts/init-session.sh",
+      "bytes": 7273,
+      "sha256": "aaadee2628d6dc27983ae81780769889da36600b6c97d81169cac31c3d2c1327"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "source": "/root/.agents/skills/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "bytes": 1227,
+      "sha256": "96d61686053722e81bfa9fe2e918c546ce5d51dbad54d5388735b39b2c9ca2f1"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/resolve-plan-dir.sh",
+      "source": "/root/.agents/skills/planning-with-files/scripts/resolve-plan-dir.sh",
+      "bytes": 3884,
+      "sha256": "6f6ffb41cb949b93b2c5eb66eb3300e9baabaf8155a6dfd99686f9a31f639dbe"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/session-catchup.py",
+      "source": "/root/.agents/skills/planning-with-files/scripts/session-catchup.py",
+      "bytes": 21583,
+      "sha256": "bc432f8e1caac47e7e2f19063efc48f351b88e5c7bc0059b86a1ad39a6a1a4de"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/set-active-plan.ps1",
+      "source": "/root/.agents/skills/planning-with-files/scripts/set-active-plan.ps1",
+      "bytes": 1600,
+      "sha256": "81328fd39fef216a9133eea38cdca4eb25a39defb3084f58c746948ba287333d"
+    },
+    {
+      "path": "skills/shared/planning-with-files/scripts/set-active-plan.sh",
+      "source": "/root/.agents/skills/planning-with-files/scripts/set-active-plan.sh",
+      "bytes": 1505,
+      "sha256": "72e3e2b3dcd9cb40018ebd86491f54deb84b540f723dd4a0e78ac47931c5db6c"
+    },
+    {
+      "path": "skills/shared/planning-with-files/templates/findings.md",
+      "source": "/root/.agents/skills/planning-with-files/templates/findings.md",
+      "bytes": 3561,
+      "sha256": "b5e64d73704daefa8492356d2c2c67ffeb78d79d448b316c0a0debc9226ad785"
+    },
+    {
+      "path": "skills/shared/planning-with-files/templates/progress.md",
+      "source": "/root/.agents/skills/planning-with-files/templates/progress.md",
+      "bytes": 4001,
+      "sha256": "a2366167ed178bc4a3c1d72ec6c5f6ea9e38aed67c6f3dd2c1a8cbdb4cde76b6"
+    },
+    {
+      "path": "skills/shared/planning-with-files/templates/task_plan.md",
+      "source": "/root/.agents/skills/planning-with-files/templates/task_plan.md",
+      "bytes": 4613,
+      "sha256": "03ab63b35434c8cf2375000762bb1f360db2e9b3a825810d0aee311bad5f49aa"
+    },
+    {
+      "path": "skills/shared/requesting-code-review/SKILL.md",
+      "source": "/root/.agents/skills/requesting-code-review/SKILL.md",
+      "bytes": 2935,
+      "sha256": "a5ff68586ccf62d1803cedeb71d60fd96ec05591d29c8d123196117eefd34cd0"
+    },
+    {
+      "path": "skills/shared/requesting-code-review/code-reviewer.md",
+      "source": "/root/.agents/skills/requesting-code-review/code-reviewer.md",
+      "bytes": 3385,
+      "sha256": "7f5328dca12cb200005ae9d4386f63a9b0acb735ece57f82db206b4a3189ccae"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/CREATION-LOG.md",
+      "source": "/root/.agents/skills/systematic-debugging/CREATION-LOG.md",
+      "bytes": 4268,
+      "sha256": "b482ef9a918fbfc6c369729e8160633ddfa2332466dd362ee73f1527c239ef8b"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/SKILL.md",
+      "source": "/root/.agents/skills/systematic-debugging/SKILL.md",
+      "bytes": 9884,
+      "sha256": "4999cb851360485eca5074e727bbdd62ef20549c5d5b01216fcbf5831badb473"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/condition-based-waiting-example.ts",
+      "source": "/root/.agents/skills/systematic-debugging/condition-based-waiting-example.ts",
+      "bytes": 5054,
+      "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/condition-based-waiting.md",
+      "source": "/root/.agents/skills/systematic-debugging/condition-based-waiting.md",
+      "bytes": 3516,
+      "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/defense-in-depth.md",
+      "source": "/root/.agents/skills/systematic-debugging/defense-in-depth.md",
+      "bytes": 3650,
+      "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/find-polluter.sh",
+      "source": "/root/.agents/skills/systematic-debugging/find-polluter.sh",
+      "bytes": 1528,
+      "sha256": "6462747eae9b175ac145b78bcfaeab755654a75e32637f08eb633f065a9e1d7c"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/root-cause-tracing.md",
+      "source": "/root/.agents/skills/systematic-debugging/root-cause-tracing.md",
+      "bytes": 5327,
+      "sha256": "a81bee9448794d261b4aca8487c595d11ff4bd4e10a5f96bca1117dd32527050"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/test-academic.md",
+      "source": "/root/.agents/skills/systematic-debugging/test-academic.md",
+      "bytes": 653,
+      "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/test-pressure-1.md",
+      "source": "/root/.agents/skills/systematic-debugging/test-pressure-1.md",
+      "bytes": 1900,
+      "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/test-pressure-2.md",
+      "source": "/root/.agents/skills/systematic-debugging/test-pressure-2.md",
+      "bytes": 2283,
+      "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016"
+    },
+    {
+      "path": "skills/shared/systematic-debugging/test-pressure-3.md",
+      "source": "/root/.agents/skills/systematic-debugging/test-pressure-3.md",
+      "bytes": 2692,
+      "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708"
+    },
+    {
+      "path": "skills/shared/test-driven-development/SKILL.md",
+      "source": "/root/.agents/skills/test-driven-development/SKILL.md",
+      "bytes": 9867,
+      "sha256": "7dee67b4af6bdccc7a914ca34533184d64592d0f5b23aeae631538168db14994"
+    },
+    {
+      "path": "skills/shared/test-driven-development/testing-anti-patterns.md",
+      "source": "/root/.agents/skills/test-driven-development/testing-anti-patterns.md",
+      "bytes": 8251,
+      "sha256": "bde453bc258f06543987477c837939afaa774ea2acbd9f308d702fc452bc4283"
+    },
+    {
+      "path": "skills/shared/using-superpowers/SKILL.md",
+      "source": "/root/.agents/skills/using-superpowers/SKILL.md",
+      "bytes": 5421,
+      "sha256": "316e29381219adf0cac62190c67aeabf427d6e6e5f2735541d502b3d339be7aa"
+    },
+    {
+      "path": "skills/shared/using-superpowers/references/codex-tools.md",
+      "source": "/root/.agents/skills/using-superpowers/references/codex-tools.md",
+      "bytes": 4070,
+      "sha256": "9014e6746c9a6d3af9eeb9608f1ad637ee334e5a12d178747e3042937fc3da2b"
+    },
+    {
+      "path": "skills/shared/using-superpowers/references/copilot-tools.md",
+      "source": "/root/.agents/skills/using-superpowers/references/copilot-tools.md",
+      "bytes": 2193,
+      "sha256": "5e0e9248e8bd965a28c8721bed24ddfa44a1ee66a89ee275da4a8260fe636e02"
+    },
+    {
+      "path": "skills/shared/using-superpowers/references/gemini-tools.md",
+      "source": "/root/.agents/skills/using-superpowers/references/gemini-tools.md",
+      "bytes": 1494,
+      "sha256": "477239fd7b4868f016662831e0fe840557ce91217f057f742a41af57a53554de"
+    },
+    {
+      "path": "skills/shared/writing-plans/SKILL.md",
+      "source": "/root/.agents/skills/writing-plans/SKILL.md",
+      "bytes": 6046,
+      "sha256": "90056bad3d5f196fa7c9fec0ffe592e6d9c86bc983e406642a51d1a4198b7024"
+    },
+    {
+      "path": "skills/shared/writing-plans/plan-document-reviewer-prompt.md",
+      "source": "/root/.agents/skills/writing-plans/plan-document-reviewer-prompt.md",
+      "bytes": 1714,
+      "sha256": "6fce2aa83c63715697e9dd86050c820716100b91efbd9f12bab8477ecc060256"
+    },
+    {
+      "path": "skills/claude/codex-delegate/SKILL.md",
+      "source": "/root/.claude/skills/codex-delegate/SKILL.md",
+      "bytes": 7494,
+      "sha256": "ea50bead01d6df7b857b2a1e53bf92ca398b51f41a6d21a0ba29d8e63eb2e54a"
+    },
+    {
+      "path": "skills/claude/planning-with-files/SKILL.md",
+      "source": "/root/.claude/skills/planning-with-files/SKILL.md",
+      "bytes": 27253,
+      "sha256": "a015cdfb22463327aa2f2eb685335520024a24cd8da4a6b6ca77beea252569bf"
+    },
+    {
+      "path": "skills/claude/planning-with-files/examples.md",
+      "source": "/root/.claude/skills/planning-with-files/examples.md",
+      "bytes": 4518,
+      "sha256": "450355fac69e0fac93453b6c7383c8fb9ba3470662f6c8291080028f73ce00dc"
+    },
+    {
+      "path": "skills/claude/planning-with-files/reference.md",
+      "source": "/root/.claude/skills/planning-with-files/reference.md",
+      "bytes": 8066,
+      "sha256": "f8b4edf7037a19cc4119f8cdc11dcda511da2d949328786202e0434d6044b830"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/attest-plan.ps1",
+      "source": "/root/.claude/skills/planning-with-files/scripts/attest-plan.ps1",
+      "bytes": 3950,
+      "sha256": "5a0473ddfea7c5936a8f9be30b94b23af2e37e7454057482dcb57d6b599f506c"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/attest-plan.sh",
+      "source": "/root/.claude/skills/planning-with-files/scripts/attest-plan.sh",
+      "bytes": 6500,
+      "sha256": "0189bbd5d45204b772c2338b7da7e00ad4ee81a40744dd05ade0d84547335993"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/check-complete.ps1",
+      "source": "/root/.claude/skills/planning-with-files/scripts/check-complete.ps1",
+      "bytes": 1797,
+      "sha256": "f9e5d7bc1e92a466a44fcd7de1bfa3f69174a55396af0a54e739407f75911e13"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/check-complete.sh",
+      "source": "/root/.claude/skills/planning-with-files/scripts/check-complete.sh",
+      "bytes": 2523,
+      "sha256": "290ddc6880879321fb260c7988947c643b8cadae06c77e9f9f8a9ada37abfc5c"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/init-session.ps1",
+      "source": "/root/.claude/skills/planning-with-files/scripts/init-session.ps1",
+      "bytes": 3806,
+      "sha256": "4c720adf32e7f3548b13c9c754be58531daddbcabd38a9c3b837cf75b2dbb7a2"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/init-session.sh",
+      "source": "/root/.claude/skills/planning-with-files/scripts/init-session.sh",
+      "bytes": 7273,
+      "sha256": "aaadee2628d6dc27983ae81780769889da36600b6c97d81169cac31c3d2c1327"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "source": "/root/.claude/skills/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "bytes": 1227,
+      "sha256": "96d61686053722e81bfa9fe2e918c546ce5d51dbad54d5388735b39b2c9ca2f1"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/resolve-plan-dir.sh",
+      "source": "/root/.claude/skills/planning-with-files/scripts/resolve-plan-dir.sh",
+      "bytes": 3884,
+      "sha256": "6f6ffb41cb949b93b2c5eb66eb3300e9baabaf8155a6dfd99686f9a31f639dbe"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/session-catchup.py",
+      "source": "/root/.claude/skills/planning-with-files/scripts/session-catchup.py",
+      "bytes": 21583,
+      "sha256": "bc432f8e1caac47e7e2f19063efc48f351b88e5c7bc0059b86a1ad39a6a1a4de"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/set-active-plan.ps1",
+      "source": "/root/.claude/skills/planning-with-files/scripts/set-active-plan.ps1",
+      "bytes": 1600,
+      "sha256": "81328fd39fef216a9133eea38cdca4eb25a39defb3084f58c746948ba287333d"
+    },
+    {
+      "path": "skills/claude/planning-with-files/scripts/set-active-plan.sh",
+      "source": "/root/.claude/skills/planning-with-files/scripts/set-active-plan.sh",
+      "bytes": 1505,
+      "sha256": "72e3e2b3dcd9cb40018ebd86491f54deb84b540f723dd4a0e78ac47931c5db6c"
+    },
+    {
+      "path": "skills/claude/planning-with-files/templates/findings.md",
+      "source": "/root/.claude/skills/planning-with-files/templates/findings.md",
+      "bytes": 3561,
+      "sha256": "b5e64d73704daefa8492356d2c2c67ffeb78d79d448b316c0a0debc9226ad785"
+    },
+    {
+      "path": "skills/claude/planning-with-files/templates/progress.md",
+      "source": "/root/.claude/skills/planning-with-files/templates/progress.md",
+      "bytes": 4001,
+      "sha256": "a2366167ed178bc4a3c1d72ec6c5f6ea9e38aed67c6f3dd2c1a8cbdb4cde76b6"
+    },
+    {
+      "path": "skills/claude/planning-with-files/templates/task_plan.md",
+      "source": "/root/.claude/skills/planning-with-files/templates/task_plan.md",
+      "bytes": 4613,
+      "sha256": "03ab63b35434c8cf2375000762bb1f360db2e9b3a825810d0aee311bad5f49aa"
+    },
+    {
+      "path": "skills/codex/.system/.codex-system-skills.marker",
+      "source": "/root/.codex/skills/.system/.codex-system-skills.marker",
+      "bytes": 17,
+      "sha256": "4b857d61192f2fa2df02f1200356167abf381eb1080de74972acd52a365eefca"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/LICENSE.txt",
+      "source": "/root/.codex/skills/.system/imagegen/LICENSE.txt",
+      "bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/SKILL.md",
+      "source": "/root/.codex/skills/.system/imagegen/SKILL.md",
+      "bytes": 19201,
+      "sha256": "681ddb4ad6d06a2acc78a3535b583f8d0c1ea800ecda3d56370d3310fd2cd4ba"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/agents/openai.yaml",
+      "source": "/root/.codex/skills/.system/imagegen/agents/openai.yaml",
+      "bytes": 275,
+      "sha256": "9ca574af14580dc7a2a3dc37a1796d17f93cb8850be66501f0799ef8603e9dc0"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/assets/imagegen-small.svg",
+      "source": "/root/.codex/skills/.system/imagegen/assets/imagegen-small.svg",
+      "bytes": 2889,
+      "sha256": "cff5f34f57ff60b3ee92eaedd17b15e96dd4b9e776df3e78936c9e00d42be294"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/assets/imagegen.png",
+      "source": "/root/.codex/skills/.system/imagegen/assets/imagegen.png",
+      "bytes": 1711,
+      "sha256": "95952f644064eb9e890f98d8db07216347186526e4c41ad66d3420629eb86e20"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/references/cli.md",
+      "source": "/root/.codex/skills/.system/imagegen/references/cli.md",
+      "bytes": 9655,
+      "sha256": "ecfc2e09261a0feb3482517a5fa0ff410cb7d1958e3cbd2ac6b61586f5b81405"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/references/codex-network.md",
+      "source": "/root/.codex/skills/.system/imagegen/references/codex-network.md",
+      "bytes": 1779,
+      "sha256": "c88298ca4481f6116a16fa7987434fc977f8b311c1bbc0c3d862ffd0c5981148"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/references/image-api.md",
+      "source": "/root/.codex/skills/.system/imagegen/references/image-api.md",
+      "bytes": 6072,
+      "sha256": "dc975d7af8a4888967251a0276014b4a71ea30455294944b762256373ce3e569"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/references/prompting.md",
+      "source": "/root/.codex/skills/.system/imagegen/references/prompting.md",
+      "bytes": 8282,
+      "sha256": "b210b051c775860267080941eba968212bf0ac7fce581d75c5dcc217d8293f8b"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/references/sample-prompts.md",
+      "source": "/root/.codex/skills/.system/imagegen/references/sample-prompts.md",
+      "bytes": 17617,
+      "sha256": "70474177d151855b175c6133de2aae1d90b7f146b0dab50ec830972c47d72183"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/scripts/image_gen.py",
+      "source": "/root/.codex/skills/.system/imagegen/scripts/image_gen.py",
+      "bytes": 34667,
+      "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448"
+    },
+    {
+      "path": "skills/codex/.system/imagegen/scripts/remove_chroma_key.py",
+      "source": "/root/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+      "bytes": 13905,
+      "sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/LICENSE.txt",
+      "source": "/root/.codex/skills/.system/openai-docs/LICENSE.txt",
+      "bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/SKILL.md",
+      "source": "/root/.codex/skills/.system/openai-docs/SKILL.md",
+      "bytes": 5437,
+      "sha256": "aa6829e21df2223167c85d2e49b6337a7345c84c1033f1ec10182c7882b36d45"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/agents/openai.yaml",
+      "source": "/root/.codex/skills/.system/openai-docs/agents/openai.yaml",
+      "bytes": 370,
+      "sha256": "44b9efac6be1bae32d869aa2942fecbe4dcae82682ee03e4120f2f9b7d4658ec"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/assets/openai-small.svg",
+      "source": "/root/.codex/skills/.system/openai-docs/assets/openai-small.svg",
+      "bytes": 1091,
+      "sha256": "45be1f0757eb18889eefb1e7db79668ef46a275dc4e0e78e8df5ebd7f6cdeadc"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/assets/openai.png",
+      "source": "/root/.codex/skills/.system/openai-docs/assets/openai.png",
+      "bytes": 1429,
+      "sha256": "156cc84d7332bfe95b310350bd470b690d22aa33d65340cc6c2e06022946194c"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/references/codex-self-knowledge.md",
+      "source": "/root/.codex/skills/.system/openai-docs/references/codex-self-knowledge.md",
+      "bytes": 7417,
+      "sha256": "8c8fb00e6e5cb1977924f5164684a6095427fa828bbc765225f17d9aeb79a912"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/references/latest-model.md",
+      "source": "/root/.codex/skills/.system/openai-docs/references/latest-model.md",
+      "bytes": 2147,
+      "sha256": "bdf241d505eb071b1c7b0b732f842b701348cf6eab95d1c36fd97edac64dd158"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/references/mcp-diagnostics.md",
+      "source": "/root/.codex/skills/.system/openai-docs/references/mcp-diagnostics.md",
+      "bytes": 2318,
+      "sha256": "49bbd2f73df7bbd7f86c80425dea4da2d301c22046080399a36bfc0ca49509e9"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/references/model-migration.md",
+      "source": "/root/.codex/skills/.system/openai-docs/references/model-migration.md",
+      "bytes": 5094,
+      "sha256": "bef46671036c8e483b7f65df931171217d55a8d26098851c2f89784db8edca2f"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/references/model-selection.md",
+      "source": "/root/.codex/skills/.system/openai-docs/references/model-selection.md",
+      "bytes": 1344,
+      "sha256": "ba2d164abbca30435a460a0bc3a7d82398dce2bdf092705c98ba55b3f3af38a8"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/references/official-docs.md",
+      "source": "/root/.codex/skills/.system/openai-docs/references/official-docs.md",
+      "bytes": 3337,
+      "sha256": "7962f2dce55089b93bde4115bb89fd42f20993c1597a2b13edd4956f463875b9"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/references/prompting-guide.md",
+      "source": "/root/.codex/skills/.system/openai-docs/references/prompting-guide.md",
+      "bytes": 10166,
+      "sha256": "548d4ca73a34cd4b0041ef05a899592e8c50772b8f3a76c579ec941e403e19f6"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/references/upgrade-guide.md",
+      "source": "/root/.codex/skills/.system/openai-docs/references/upgrade-guide.md",
+      "bytes": 1027,
+      "sha256": "ecac89155f910f064fd306e89c74585cabdb2142aba4f2acc0cead092ae1d1a5"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/references/upgrading-to-gpt-6-astra.md",
+      "source": "/root/.codex/skills/.system/openai-docs/references/upgrading-to-gpt-6-astra.md",
+      "bytes": 18993,
+      "sha256": "62ef6d22684662a019d203834fe1205a07e4ca4c65dddcbabe1bb51efe1aa840"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/scripts/fetch-codex-manual.mjs",
+      "source": "/root/.codex/skills/.system/openai-docs/scripts/fetch-codex-manual.mjs",
+      "bytes": 16085,
+      "sha256": "f53eb6d2f286e9efcc397e8bee93a938e37296c90953e4e06e94899ef1b6c363"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/scripts/resolve-latest-model-info",
+      "source": "/root/.codex/skills/.system/openai-docs/scripts/resolve-latest-model-info",
+      "bytes": 1038,
+      "sha256": "7354dbb030ca0736dd633a7ca1b930cf640abd40370725dea3a458cb51d49523"
+    },
+    {
+      "path": "skills/codex/.system/openai-docs/scripts/resolve-latest-model-info.cjs",
+      "source": "/root/.codex/skills/.system/openai-docs/scripts/resolve-latest-model-info.cjs",
+      "bytes": 3937,
+      "sha256": "eeb1bb486018e16b37edfc06b1a37179dbc672982d501040d4f7142f29dd2e64"
+    },
+    {
+      "path": "skills/codex/.system/review-agent/SKILL.md",
+      "source": "/root/.codex/skills/.system/review-agent/SKILL.md",
+      "bytes": 2661,
+      "sha256": "07079efd0dc76f05fade424e5dfb048dce1de2df7626e1a4f56292a4f3f92228"
+    },
+    {
+      "path": "skills/codex/.system/review-agent/agents/openai.yaml",
+      "source": "/root/.codex/skills/.system/review-agent/agents/openai.yaml",
+      "bytes": 252,
+      "sha256": "4d867a46d15e36ac880176484aae160f59855340c6059b2ea6ab9fbc9af084de"
+    },
+    {
+      "path": "skills/codex/.system/skill-creator/SKILL.md",
+      "source": "/root/.codex/skills/.system/skill-creator/SKILL.md",
+      "bytes": 15311,
+      "sha256": "6656e54755638e8efcf275a472b9672eaa8a9a1b9e59dc210e275b03b59e1e66"
+    },
+    {
+      "path": "skills/codex/.system/skill-creator/agents/openai.yaml",
+      "source": "/root/.codex/skills/.system/skill-creator/agents/openai.yaml",
+      "bytes": 183,
+      "sha256": "d07d21b93fcf3d4dc8d9a3399c05fc226a49a333a96d3e1c68b451b8dd9eade6"
+    },
+    {
+      "path": "skills/codex/.system/skill-creator/assets/skill-creator-small.svg",
+      "source": "/root/.codex/skills/.system/skill-creator/assets/skill-creator-small.svg",
+      "bytes": 1319,
+      "sha256": "6591bf8ea9bb9435890dbdea299e0d2bd05f3aa893a335d26e4c535e93c8e7fb"
+    },
+    {
+      "path": "skills/codex/.system/skill-creator/assets/skill-creator.png",
+      "source": "/root/.codex/skills/.system/skill-creator/assets/skill-creator.png",
+      "bytes": 1563,
+      "sha256": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162"
+    },
+    {
+      "path": "skills/codex/.system/skill-creator/license.txt",
+      "source": "/root/.codex/skills/.system/skill-creator/license.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/codex/.system/skill-creator/references/openai_yaml.md",
+      "source": "/root/.codex/skills/.system/skill-creator/references/openai_yaml.md",
+      "bytes": 2356,
+      "sha256": "ffac39318e408108141d40f820968e59f70434a891694f9bf1d25be8237b150c"
+    },
+    {
+      "path": "skills/codex/.system/skill-creator/scripts/generate_openai_yaml.py",
+      "source": "/root/.codex/skills/.system/skill-creator/scripts/generate_openai_yaml.py",
+      "bytes": 6669,
+      "sha256": "816df12072d74faf924d802a6599a139997e1441e90bfe4869ec304f2e5e2851"
+    },
+    {
+      "path": "skills/codex/.system/skill-creator/scripts/init_skill.py",
+      "source": "/root/.codex/skills/.system/skill-creator/scripts/init_skill.py",
+      "bytes": 10314,
+      "sha256": "bf0656a5f9d8d8cdecf0245eaf27e1df8e0e9b6d40ccdda814eb8e3d5f6992c8"
+    },
+    {
+      "path": "skills/codex/.system/skill-creator/scripts/quick_validate.py",
+      "source": "/root/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "bytes": 4249,
+      "sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c"
+    },
+    {
+      "path": "skills/codex/.system/skill-installer/LICENSE.txt",
+      "source": "/root/.codex/skills/.system/skill-installer/LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/codex/.system/skill-installer/SKILL.md",
+      "source": "/root/.codex/skills/.system/skill-installer/SKILL.md",
+      "bytes": 3367,
+      "sha256": "d68b77e5bbb34dedab89d134da52855f140fc4b4299b80104f534e3b9e98f8ee"
+    },
+    {
+      "path": "skills/codex/.system/skill-installer/agents/openai.yaml",
+      "source": "/root/.codex/skills/.system/skill-installer/agents/openai.yaml",
+      "bytes": 221,
+      "sha256": "5ce223d8b1070b82c42298538f1b8d376f788eb9e7a42a987e8c094070d73f0e"
+    },
+    {
+      "path": "skills/codex/.system/skill-installer/assets/skill-installer-small.svg",
+      "source": "/root/.codex/skills/.system/skill-installer/assets/skill-installer-small.svg",
+      "bytes": 923,
+      "sha256": "3928703ff00dc1a681e7a22401843b7edcbd4b2051651ce4c43b75f7e140504e"
+    },
+    {
+      "path": "skills/codex/.system/skill-installer/assets/skill-installer.png",
+      "source": "/root/.codex/skills/.system/skill-installer/assets/skill-installer.png",
+      "bytes": 1086,
+      "sha256": "d0a230b1a79b71b858b7c215a0fbb0768d6459c14ea4ef80c61592629bf0e605"
+    },
+    {
+      "path": "skills/codex/.system/skill-installer/scripts/github_utils.py",
+      "source": "/root/.codex/skills/.system/skill-installer/scripts/github_utils.py",
+      "bytes": 659,
+      "sha256": "61c1bbe2ae217433b4b6f9f09f21aca4df52c12598068343ade719f706e4859b"
+    },
+    {
+      "path": "skills/codex/.system/skill-installer/scripts/install-skill-from-github.py",
+      "source": "/root/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py",
+      "bytes": 11917,
+      "sha256": "38f311b75664bb063808f982c600271ebc4b560830f491705190f88a94e3e781"
+    },
+    {
+      "path": "skills/codex/.system/skill-installer/scripts/list-skills.py",
+      "source": "/root/.codex/skills/.system/skill-installer/scripts/list-skills.py",
+      "bytes": 2948,
+      "sha256": "9d6dfb2abf3afeee7f027a89fb1626b918a973da18f4eb6c25681286301beb41"
+    },
+    {
+      "path": "skills/codex/paper-code-aligner/SKILL.md",
+      "source": "/root/.codex/skills/paper-code-aligner/SKILL.md",
+      "bytes": 7884,
+      "sha256": "354aa514f112d8df60b59a71dee9fd9d6736a9b8570ac4b94767409f5af24aae"
+    },
+    {
+      "path": "skills/codex/paper-code-aligner/prompts/01-paper-pipeline-extraction.md",
+      "source": "/root/.codex/skills/paper-code-aligner/prompts/01-paper-pipeline-extraction.md",
+      "bytes": 2226,
+      "sha256": "efcd7c188e7ea9570c2d4c30e3a3d8b4f19b44107dcf1f15e1ccb5c0d62ca0e1"
+    },
+    {
+      "path": "skills/codex/paper-code-aligner/prompts/02-codebase-map.md",
+      "source": "/root/.codex/skills/paper-code-aligner/prompts/02-codebase-map.md",
+      "bytes": 1683,
+      "sha256": "b9f5ca0406c4c0d263a51c2795df28d137ead16022b6708afde8ce61e916d963"
+    },
+    {
+      "path": "skills/codex/paper-code-aligner/prompts/03-module-alignment.md",
+      "source": "/root/.codex/skills/paper-code-aligner/prompts/03-module-alignment.md",
+      "bytes": 1877,
+      "sha256": "e1484fe783783ca5704b6093a0e2e038b7894072e543890005ad295e5c95ee6e"
+    },
+    {
+      "path": "skills/codex/paper-code-aligner/prompts/04-formula-alignment.md",
+      "source": "/root/.codex/skills/paper-code-aligner/prompts/04-formula-alignment.md",
+      "bytes": 1871,
+      "sha256": "9bb691ef349baec212e67127ffcadab7bf0fbcf1e6134aaab57532f00d2676e1"
+    },
+    {
+      "path": "skills/codex/paper-code-aligner/prompts/05-final-report.md",
+      "source": "/root/.codex/skills/paper-code-aligner/prompts/05-final-report.md",
+      "bytes": 1564,
+      "sha256": "75e8a84eaf785df5485883313f950d7b0c030ef0a01f4ca120fed63395e4709e"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/maintain-space/SKILL.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/maintain-space/SKILL.md",
+      "bytes": 6600,
+      "sha256": "53570e6cb8663d370dce15ed0d67208876c3b13015832c352daa759213e7378e"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/maintain-space/agents/openai.yaml",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/maintain-space/agents/openai.yaml",
+      "bytes": 239,
+      "sha256": "3c7b43e378888955e9be6f02133b7522a0614f94f86d7066d72322ce2dc71325"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/manage-schedules/SKILL.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/manage-schedules/SKILL.md",
+      "bytes": 7719,
+      "sha256": "e0a464a83f15a6e896c5536cab775f667ebd0dd61eb64fe3c877a41935d64bd9"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/manage-schedules/agents/openai.yaml",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/manage-schedules/agents/openai.yaml",
+      "bytes": 201,
+      "sha256": "502b266f394596a35919f7d77948e803fecc8f0ab7044893918b87a6fa8e45f6"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/organize-space/SKILL.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/organize-space/SKILL.md",
+      "bytes": 6605,
+      "sha256": "dfa8bfae86785a98e43b1ca0af67a9c89b90c658eee7fc7ad4ccfe8cc84a267b"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/organize-space/agents/openai.yaml",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/organize-space/agents/openai.yaml",
+      "bytes": 235,
+      "sha256": "a6e28b204d44f1312cdf715a73c9dacfda8b3d742ed5a57ef926bf4a15219f8f"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/write-page/SKILL.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/write-page/SKILL.md",
+      "bytes": 9431,
+      "sha256": "4aef24b45f150aaa8ac5a9855a83b835f37b5dddeecb84baf51234036fb4b94e"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/write-page/agents/openai.yaml",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/write-page/agents/openai.yaml",
+      "bytes": 252,
+      "sha256": "b33464c83ab6cf5506a5097fb96ff13a0e3956a4ddf852b5c538b46580fa27a0"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/write-page/references/edit-requests.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/write-page/references/edit-requests.md",
+      "bytes": 11486,
+      "sha256": "b57bcdede9f3ebd132949a0171f0506e5dafa32c6a2b44d67618e35aef7bf2e9"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/write-page/references/page-content.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/write-page/references/page-content.md",
+      "bytes": 17745,
+      "sha256": "22afc6c3329b9db6ddffc1dc35be901ec2dd5fcfb1d64df94b8c1edfa4cfc008"
+    },
+    {
+      "path": "skills/plugins/codex/pages-0.1.21/write-page/writing_quality.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/pages/0.1.21/skills/write-page/writing_quality.md",
+      "bytes": 7054,
+      "sha256": "6e26709fe1bc87d419eda4efe7f0ed0cf2c64ab22b8256b3223514aee1f8714a"
+    },
+    {
+      "path": "skills/plugins/codex/plugin-management-0.1.0/plugin-management/SKILL.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management/SKILL.md",
+      "bytes": 2983,
+      "sha256": "653841cc21205269f08b0ce135891e1518dac616a766bcfb0b57d788d3f68b10"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/SKILL.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/SKILL.md",
+      "bytes": 11890,
+      "sha256": "5a942cda3c1a22a94b71f24ace3e3489b6e5dd72b1ec9da69d17fd400031647a"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/app-integrations.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/app-integrations.md",
+      "bytes": 9153,
+      "sha256": "83686660a66b56c4f6cb6db7ced98e2ec05e4f7eb142e091a13f1f121c5e57f1"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/browser-agent-support.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/browser-agent-support.md",
+      "bytes": 3505,
+      "sha256": "02aed5c7077d24745de1aefba14039873acb6a3920a82af4c3a8cde5fe1c8c7e"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/design/presentation-led.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/design/presentation-led.md",
+      "bytes": 985,
+      "sha256": "e5ba3863c71d0397e90d7adee8424eb37feb10aab0245f46c3934f7f1cd2c00f"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/identity-and-secrets.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/identity-and-secrets.md",
+      "bytes": 3714,
+      "sha256": "0ade4af1dad4cef94ba104781bfdbd466a26f6a0227d366ec02c6447453d108f"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/preview/local.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/preview/local.md",
+      "bytes": 848,
+      "sha256": "af6b2dc6d586233e43820194848522df4dd56fa4c411b7a25d1f2b47fa726545"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/preview/managed.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/preview/managed.md",
+      "bytes": 1167,
+      "sha256": "2a30660ae311f9358d15e91908706f1c4497f99b341524468c4b32bee5d4d139"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/recurring-updates.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/recurring-updates.md",
+      "bytes": 3411,
+      "sha256": "08bd1618634109053e1316519a220c14b06333ff04acd2334e12f42f8ea00b01"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/site-mcp-server.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/site-mcp-server.md",
+      "bytes": 1976,
+      "sha256": "0bce14bcd955e2beb1b1efc77ce1136779ecaf808ed5e599be75cbf74b713749"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/storage.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/storage.md",
+      "bytes": 1885,
+      "sha256": "608efea142e68b80e88a466bd4b1523a19c6c4c74af6662aff9718caa605ce16"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/references/troubleshooting.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/references/troubleshooting.md",
+      "bytes": 1965,
+      "sha256": "7945af4e5678ee5a07715cf97c62bccc61df8fda80fbdd63ab9058f11b4dd2ed"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/scripts/package-site.sh",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/scripts/package-site.sh",
+      "bytes": 1971,
+      "sha256": "dc2fe55adac180885d0b9469fd09d5ea7b1824fcea9019fea27ccfda241968e7"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/scripts/prepare-site-build.cjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/scripts/prepare-site-build.cjs",
+      "bytes": 6809,
+      "sha256": "32496143dcc6f7e7c5410444e319469e2525c1d2eda0d2ed7c65e7c67995dbe3"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/.gitignore",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/.gitignore",
+      "bytes": 824,
+      "sha256": "65c950beefe57952cd630bb6ae071b0302279c9b97d9ee8517ea6d2f4cd0b4f2"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/.npmrc",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/.npmrc",
+      "bytes": 45,
+      "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/.openai/hosting.json",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/.openai/hosting.json",
+      "bytes": 31,
+      "sha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/README.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/README.md",
+      "bytes": 10120,
+      "sha256": "b670ba0eff3b6b1598f619278ca1f61eb609bebc1f80f68c56829905d715dac7"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/app/chatgpt-auth.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/app/chatgpt-auth.ts",
+      "bytes": 2550,
+      "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/app/globals.css",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/app/globals.css",
+      "bytes": 3928,
+      "sha256": "8546d9b115f0addd582f7ceaaa6b1c069310bcc77c43ee7b8acfe0020be3afd7"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/app/layout.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/app/layout.tsx",
+      "bytes": 523,
+      "sha256": "fb20da0ae67bb49128afe28c32dba4ff1588e70d6c913a64ef8a0b95f94d63da"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/app/page.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/app/page.tsx",
+      "bytes": 4466,
+      "sha256": "c2293d77b0cff0d149cc153eae96eb6f807f0967b12a177b387f8d9b695f6d7f"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/build/connector-preview-plugin.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/build/connector-preview-plugin.mjs",
+      "bytes": 7211,
+      "sha256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/build/connector-preview-worker.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/build/connector-preview-worker.mjs",
+      "bytes": 594,
+      "sha256": "c1b6b2c420cb67d9e28f8f4ae440f578c0dfd4cb840a12cfe4b58076629a17ba"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/build/sites-vite-plugin.LICENSE",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/build/sites-vite-plugin.LICENSE",
+      "bytes": 1063,
+      "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/build/sites-vite-plugin.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/build/sites-vite-plugin.ts",
+      "bytes": 7185,
+      "sha256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/build/sites-worker.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/build/sites-worker.ts",
+      "bytes": 1279,
+      "sha256": "28a75f74adfc226a773d1c00d5779c26412eea40a104da5c77f7d0f0fc30f0e8"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/cloudflare-env.d.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/cloudflare-env.d.ts",
+      "bytes": 99,
+      "sha256": "8b0eca84aa3364cc7ccc43cc3af6beb88dd34ebd410de08690bf094ce39fbcb0"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/connector-error.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/connector-error.tsx",
+      "bytes": 1082,
+      "sha256": "2d0d04559952ce9c9a327cca499f4b99f35d885cccfce375230e116695d3f155"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/accordion.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/accordion.tsx",
+      "bytes": 2048,
+      "sha256": "a4f153089ba886dfcf73fac26b5c01ca933fa12fbe88df6fb723912bfffdfbb0"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/alert-dialog.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/alert-dialog.tsx",
+      "bytes": 5439,
+      "sha256": "9a8d950f2b9b4352d5ebb762fb44d5c28c2d353aa29712071973656a8736e311"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/alert.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/alert.tsx",
+      "bytes": 1614,
+      "sha256": "2cc59b5f7bda91c1670884b1bf46bfc8a2a6f226cef184f5762acc037188885b"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/aspect-ratio.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/aspect-ratio.tsx",
+      "bytes": 274,
+      "sha256": "b1c157886236782cb92d8fbcd4749532aaf6d8aabefd6e157ca40358f902f407"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/attachment.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/attachment.tsx",
+      "bytes": 6002,
+      "sha256": "ae8a25dd1a896d3964e3ef54d97e51221b418cde287dfd794428b89951c5c790"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/avatar.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/avatar.tsx",
+      "bytes": 2916,
+      "sha256": "58a846bf1617b94b9681921db9b8461d0145f311424663d11678a06b6153cb34"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/badge.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/badge.tsx",
+      "bytes": 1776,
+      "sha256": "46a0de5224f6a5d5d63d45246534288518dce888f031064bff925bbc7fe6ad97"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/breadcrumb.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/breadcrumb.tsx",
+      "bytes": 2350,
+      "sha256": "d4c0831bba2212e778248f54a6ace6ef378df8bba4616d1abf27787a31eabae5"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/bubble.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/bubble.tsx",
+      "bytes": 4699,
+      "sha256": "870cc0c5cfc8a515053f7e41e706a6bd017a909b45f1305fd3b164a52cc4483b"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/button-group.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/button-group.tsx",
+      "bytes": 2202,
+      "sha256": "784c89d8ee683e1bc972ae69e6ea8225a7f63abe22aa1b5fc3423ae8a2a399c0"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/button.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/button.tsx",
+      "bytes": 2392,
+      "sha256": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/calendar.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/calendar.tsx",
+      "bytes": 7832,
+      "sha256": "3855fbe0d3f8ad3a4b93071f98b76a9f6782d46ec8b05f5d2ddbee1e4e39bc84"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/card.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/card.tsx",
+      "bytes": 1987,
+      "sha256": "c48dd3b96be90a7066f1aebf294f0af9d00ebcdc367d5d4aca55429ade570c1c"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/carousel.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/carousel.tsx",
+      "bytes": 5556,
+      "sha256": "b7ea0dda3903d972c186f739e23da61f547bc83b5a0bf13b16856577846d5fc3"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/chart.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/chart.tsx",
+      "bytes": 10614,
+      "sha256": "45aa5ea4a386f4fb5b8869ff4bab3a08cf89255190ee322043baf84c3e950b6a"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/checkbox.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/checkbox.tsx",
+      "bytes": 1214,
+      "sha256": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/collapsible.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/collapsible.tsx",
+      "bytes": 795,
+      "sha256": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/combobox.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/combobox.tsx",
+      "bytes": 9158,
+      "sha256": "2d68e78b2dc7e38a085f222dede60a80b4f8229a6e91732c484605e204d46735"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/command.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/command.tsx",
+      "bytes": 4818,
+      "sha256": "361193df1e3d64a9e9b5048f045264782fcb387aab3f00f2b805fdcbf538b16a"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/context-menu.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/context-menu.tsx",
+      "bytes": 8268,
+      "sha256": "2cf1fcf59df0649a3e2a126d1df2f639145f6b6bf5689ee54af1f40ab1245017"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/dialog.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/dialog.tsx",
+      "bytes": 4303,
+      "sha256": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/direction.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/direction.tsx",
+      "bytes": 506,
+      "sha256": "84ae2ad658207f0e0f367978e5508cd8027cd00c29c41d3d13db21a708c3d1e6"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/drawer.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/drawer.tsx",
+      "bytes": 4255,
+      "sha256": "cb6eaf58eb0757ca91af284e5d925b89a42ad7eb19cb3f44c575a3487aa9350f"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/dropdown-menu.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/dropdown-menu.tsx",
+      "bytes": 8418,
+      "sha256": "98f0dcdae38225b73734aceeb9213dd751fea2c72ea520df31003cd133deac8a"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/empty.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/empty.tsx",
+      "bytes": 2396,
+      "sha256": "ae95bdcf367a076ae02e7925f14522a148798f72d9651749c6d55497dba584c0"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/field.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/field.tsx",
+      "bytes": 6159,
+      "sha256": "ba67d76f017ac059fc86cf8c344e0b2991c4322d3619e125498c19b87f6eefbd"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/form.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/form.tsx",
+      "bytes": 3757,
+      "sha256": "315b46bb75ab7d1c6061b5d750aa4bedf6e7a455e15e2d7f9182f053d5972b1e"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/hover-card.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/hover-card.tsx",
+      "bytes": 1526,
+      "sha256": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/input-group.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/input-group.tsx",
+      "bytes": 5065,
+      "sha256": "6afbd58fea4c438e6252dc4568bddc122e84ababead4ad5cee50ace01100c9a0"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/input-otp.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/input-otp.tsx",
+      "bytes": 2254,
+      "sha256": "161946daa89f0eda2575b9271c0494e35807c4ffb55598a49f67160c17fec299"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/input.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/input.tsx",
+      "bytes": 962,
+      "sha256": "8c4612a7c41319ac5049daa3b34b080f9784b6245c17780eb87c127e58e473db"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/item.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/item.tsx",
+      "bytes": 4486,
+      "sha256": "6e2144d6d87142dbbe56d568810bf546318c8aa661447ebb0d76ebbf382cb45f"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/kbd.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/kbd.tsx",
+      "bytes": 862,
+      "sha256": "6088c3a5432338b1719c17e9b5d0e1fa74fd1f66060f248fc88909d33a82cd13"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/label.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/label.tsx",
+      "bytes": 606,
+      "sha256": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/marker.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/marker.tsx",
+      "bytes": 1864,
+      "sha256": "3d798763f094b2bb5e7ade2d5cd1b9bab498bc8ca7fd4cfaf4e5835bdedc34a0"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/menubar.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/menubar.tsx",
+      "bytes": 8389,
+      "sha256": "9243af8afcea03703398ccd1c2a8c0a87ad6cbaf2bd272fb609f5b79fe46aebb"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/message-scroller.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/message-scroller.tsx",
+      "bytes": 3992,
+      "sha256": "bb7660a248e4e9589c3816c7c1c199ea1381a70d2c8476ae895b567a7a4d86cf"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/message.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/message.tsx",
+      "bytes": 2232,
+      "sha256": "9d2952bf3b641081f09aa2739535e6bbd1be0a4946789752a2c20d8aaef43185"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/native-select.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/native-select.tsx",
+      "bytes": 1995,
+      "sha256": "007516b111fca8c98a6c40c94ab91bb68cc5b52afce1ed1f5e510c3d86e7347c"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/navigation-menu.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/navigation-menu.tsx",
+      "bytes": 6658,
+      "sha256": "889d358a77de88e9cb6f39ea4895ea4c76eaf01d731b74e44f1c41e97a78a044"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/pagination.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/pagination.tsx",
+      "bytes": 2717,
+      "sha256": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/popover.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/popover.tsx",
+      "bytes": 2357,
+      "sha256": "31c350309ff5d3034e6ecf1b0eda75ba8855bdbf987fc7ad6d71f0ef07c5a447"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/progress.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/progress.tsx",
+      "bytes": 755,
+      "sha256": "c8c26e8f5f041c3cdf4915347dc1d9c022f9448f149990fadcaf303e952fa57d"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/radio-group.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/radio-group.tsx",
+      "bytes": 1460,
+      "sha256": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/resizable.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/resizable.tsx",
+      "bytes": 1815,
+      "sha256": "bc63958467aa00557c551bb0d96a5ae4c965c1e1ba2380e595949d933b132f7c"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/scroll-area.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/scroll-area.tsx",
+      "bytes": 1639,
+      "sha256": "8bd9d986b2844c9a87de825c6de4787b6739b36c3dc9a05ccf3eb107160e4043"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/select.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/select.tsx",
+      "bytes": 6353,
+      "sha256": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/separator.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/separator.tsx",
+      "bytes": 694,
+      "sha256": "6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/sheet.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/sheet.tsx",
+      "bytes": 4188,
+      "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/sidebar.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/sidebar.tsx",
+      "bytes": 21526,
+      "sha256": "4a8d73e7730a2b1fcecfca31299ed26db65c2307b84197a59c6ec7c01c7ad28e"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/skeleton.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/skeleton.tsx",
+      "bytes": 276,
+      "sha256": "ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/slider.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/slider.tsx",
+      "bytes": 1991,
+      "sha256": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/sonner.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/sonner.tsx",
+      "bytes": 1034,
+      "sha256": "13ccc9b0fe4248e622f83a1d3b2f0566b72b5e04162d7d0c8db8945ecc71b55f"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/spinner.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/spinner.tsx",
+      "bytes": 331,
+      "sha256": "3e6e6e8d37fb4069f8e43e55318f8db06fbc36e6c8be0096da3c9337c1c798b9"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/switch.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/switch.tsx",
+      "bytes": 1408,
+      "sha256": "386d4d4deb39f34126f9700fe9bf5393d238485dd94018bba9d154dda84c62ae"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/table.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/table.tsx",
+      "bytes": 2478,
+      "sha256": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/tabs.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/tabs.tsx",
+      "bytes": 3782,
+      "sha256": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/textarea.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/textarea.tsx",
+      "bytes": 759,
+      "sha256": "253cdeb487c73beaaccdf47fc163e36e7d5b7ae6ddf09a4f64998a109a112979"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/toggle-group.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/toggle-group.tsx",
+      "bytes": 2308,
+      "sha256": "69f643e889e933f05c1439084480d8646f66a161c7d1cf0730ee926382ade35e"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/toggle.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/toggle.tsx",
+      "bytes": 1565,
+      "sha256": "ba4d0b0a2b2fee75dc36dfc19e32082e721024b919050c97fd5dc70faa924e16"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components/ui/tooltip.tsx",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components/ui/tooltip.tsx",
+      "bytes": 1830,
+      "sha256": "a0784eb77831a799fad7991df4f1b666f876201565a80175e1aa68733574a2e4"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/components.json",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/components.json",
+      "bytes": 420,
+      "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/db/index.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/db/index.ts",
+      "bytes": 423,
+      "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/db/schema.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/db/schema.ts",
+      "bytes": 169,
+      "sha256": "13ddacbf0be50e054d450a6c642b7fdc1aa943fd6b99084711e07e58b600390d"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/drizzle/meta/_journal.json",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/drizzle/meta/_journal.json",
+      "bytes": 61,
+      "sha256": "90cb374e093894d0efce6f1830d873a42aadd8ba49d2f024495e5cb2e1c8c303"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/drizzle.config.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/drizzle.config.ts",
+      "bytes": 148,
+      "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/eslint.config.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/eslint.config.mjs",
+      "bytes": 846,
+      "sha256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/examples/d1/app/api/notes/route.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/examples/d1/app/api/notes/route.ts",
+      "bytes": 1700,
+      "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/examples/d1/db/schema.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/examples/d1/db/schema.ts",
+      "bytes": 370,
+      "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/hooks/use-mobile.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/hooks/use-mobile.ts",
+      "bytes": 565,
+      "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/lib/connector-context.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/lib/connector-context.ts",
+      "bytes": 612,
+      "sha256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/lib/connector-contract.mts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/lib/connector-contract.mts",
+      "bytes": 5362,
+      "sha256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/lib/connector-errors.mts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/lib/connector-errors.mts",
+      "bytes": 2717,
+      "sha256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/lib/connector-preview.d.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/lib/connector-preview.d.ts",
+      "bytes": 433,
+      "sha256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/lib/connectors.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/lib/connectors.ts",
+      "bytes": 416,
+      "sha256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/lib/utils.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/lib/utils.ts",
+      "bytes": 177,
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/next.config.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/next.config.ts",
+      "bytes": 133,
+      "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/package-lock.json",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/package-lock.json",
+      "bytes": 504152,
+      "sha256": "eedaeab6870c0f70f9db869fcaa24abae9b0f945cbc9acb8a43b6e7ed6bcbfca"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/package.json",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/package.json",
+      "bytes": 2102,
+      "sha256": "eb7b53ec5bdce1db5a8576b2ffc3b63ddd8c5fdee0f97dcb341674abbf69843a"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/postcss.config.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/postcss.config.mjs",
+      "bytes": 94,
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/public/favicon.svg",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/public/favicon.svg",
+      "bytes": 712,
+      "sha256": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/public/file.svg",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/public/file.svg",
+      "bytes": 392,
+      "sha256": "1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/public/globe.svg",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/public/globe.svg",
+      "bytes": 1036,
+      "sha256": "d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/public/window.svg",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/public/window.svg",
+      "bytes": 386,
+      "sha256": "decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/build-verified.sh",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/build-verified.sh",
+      "bytes": 661,
+      "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/connector-preview/connector-preview-session.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/connector-preview/connector-preview-session.mjs",
+      "bytes": 6855,
+      "sha256": "57224ad185a25115a14fccc68d3217e55b199260c3dd98a2c807beffec1a0a9b"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/connector-preview/host-binding.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/connector-preview/host-binding.mjs",
+      "bytes": 7793,
+      "sha256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/connector-preview/protocol.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/connector-preview/protocol.mjs",
+      "bytes": 1781,
+      "sha256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/execution-profile.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/execution-profile.mjs",
+      "bytes": 624,
+      "sha256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/install-ci.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/install-ci.mjs",
+      "bytes": 1685,
+      "sha256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/install-ci.sh",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/install-ci.sh",
+      "bytes": 6783,
+      "sha256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/install-pnpm.sh",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/install-pnpm.sh",
+      "bytes": 9015,
+      "sha256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/npm-install.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/npm-install.mjs",
+      "bytes": 7025,
+      "sha256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/pnpm-install.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/pnpm-install.mjs",
+      "bytes": 10633,
+      "sha256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/run-framework.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/run-framework.mjs",
+      "bytes": 993,
+      "sha256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/sites-env.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/sites-env.mjs",
+      "bytes": 906,
+      "sha256": "5de99d6806b01f0ee0b941af3684d75dcf1afbbcff22cb95bfa2e584c5dafa88"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/scripts/sites-env.sh",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/scripts/sites-env.sh",
+      "bytes": 1530,
+      "sha256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/tsconfig.json",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/tsconfig.json",
+      "bytes": 800,
+      "sha256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "bytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/vendor/shadcn-tailwind-4.13.0.css",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/vendor/shadcn-tailwind-4.13.0.css",
+      "bytes": 16041,
+      "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/vinext-starter/vite.config.ts",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/vinext-starter/vite.config.ts",
+      "bytes": 3115,
+      "sha256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/worker-esm-starter/.gitignore",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/worker-esm-starter/.gitignore",
+      "bytes": 18,
+      "sha256": "d0fc69648a6324ef66f032712b68ae1f0f24a2a954daa8308da38a45c6a6057b"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/worker-esm-starter/.openai/hosting.json",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/worker-esm-starter/.openai/hosting.json",
+      "bytes": 31,
+      "sha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/worker-esm-starter/README.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/worker-esm-starter/README.md",
+      "bytes": 954,
+      "sha256": "a96449d81e90c01df1eb3a51e1178df813577712d00ca3695b77bd9a81714e99"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/worker-esm-starter/package.json",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/worker-esm-starter/package.json",
+      "bytes": 191,
+      "sha256": "5314513e9a77e1bf5602ae4db24ef674bbaf6e6dbc9a006eccd852b33b66f5a5"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/worker-esm-starter/scripts/build.sh",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/worker-esm-starter/scripts/build.sh",
+      "bytes": 366,
+      "sha256": "76bddebeb2accb38b37de0673778d7bf3119bc7da7ed5ae4c1d4c9884969848f"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/worker-esm-starter/scripts/validate-artifact.mjs",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/worker-esm-starter/scripts/validate-artifact.mjs",
+      "bytes": 953,
+      "sha256": "39d9df53ac2461962466d5965c5f4d06f08024ceca40605952d8b753b88d41fd"
+    },
+    {
+      "path": "skills/plugins/codex/sites-1.0.0/sites/templates/worker-esm-starter/worker/index.js",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/sites/1.0.0/skills/sites/templates/worker-esm-starter/worker/index.js",
+      "bytes": 1346,
+      "sha256": "2917434bd856c428f5ea636148dfd0161804c14a2f81e019980d573af28ef883"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/SKILL.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/SKILL.md",
+      "bytes": 17353,
+      "sha256": "841354fb8116f8fdfd3b643b30828f5180196c594d3fed9b669b948b88892af1"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/agents/openai.yaml",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/agents/openai.yaml",
+      "bytes": 219,
+      "sha256": "16690f3d631222d7479bd052c7fda536b4553224a61109fe663f414605d3e27a"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/references/animation-rows.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/references/animation-rows.md",
+      "bytes": 2583,
+      "sha256": "d27b08d599e73cf6a65a03d2b8ad49e9ad408e18292636164e7b2d2f1815615f"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/assemble_extended_atlas.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/assemble_extended_atlas.py",
+      "bytes": 21681,
+      "sha256": "a8684c22e9409f1add388688218c8fa7e267b88b91fcb3edc3280dc87ebf1c3e"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/combine_direction_blind_verdicts.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/combine_direction_blind_verdicts.py",
+      "bytes": 1962,
+      "sha256": "4dad56adaad032a4e6d070494b0ab2ca316429cf69363450f9fbf7135d1c2d42"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/compose_atlas.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/compose_atlas.py",
+      "bytes": 5756,
+      "sha256": "d690f42252746b3306007b269168e62cff08b36d58e9aef246b78d986b6a10d5"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/compose_cardinal_anchor_strip.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/compose_cardinal_anchor_strip.py",
+      "bytes": 1401,
+      "sha256": "e67ac9816a909cad136189bf23eddf8b16e0fcb430ade2262556bbd12db2bca5"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/derive_running_left_from_running_right.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/derive_running_left_from_running_right.py",
+      "bytes": 5183,
+      "sha256": "ae42859720220fe8a407fc0dfff06e8344e535c6c8019220b1f63db7714baa77"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/despill_chroma_edges.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/despill_chroma_edges.py",
+      "bytes": 10839,
+      "sha256": "dc93a5e752f4100e55010205462a8e7272bac451ee7e29b525abd6157a7fe309"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/extract_cardinal_anchors.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/extract_cardinal_anchors.py",
+      "bytes": 5006,
+      "sha256": "55434d06bc328b1879d98c821f2586963910f89926f4dcbe92682b25555a8cde"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/extract_strip_frames.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/extract_strip_frames.py",
+      "bytes": 14090,
+      "sha256": "af2cfea385189df30674c91f4658a49e5b51e58471057fbca0b3319cf932c75e"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/inspect_frames.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/inspect_frames.py",
+      "bytes": 9456,
+      "sha256": "d8a43f01970c511c74f77d256c2c81d41e70cfb7ec234f5bbd76b60b3ebbdfe4"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/make_contact_sheet.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/make_contact_sheet.py",
+      "bytes": 3450,
+      "sha256": "721399a805ae58d91a85a4d27e8bb3503eb20f4132fe4261e83acc166adc6a56"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/make_direction_blind_qa_sheet.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/make_direction_blind_qa_sheet.py",
+      "bytes": 5370,
+      "sha256": "52f2a29251872449fed51c7744c3f9f503274ee288eb23efc29a2c568b0d52bd"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/make_direction_qa_sheet.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/make_direction_qa_sheet.py",
+      "bytes": 4929,
+      "sha256": "ed09a31b3bc9b68f929a7a85be367c5b7d5639215260f98af6c97df896197908"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/measure_direction_continuity.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/measure_direction_continuity.py",
+      "bytes": 6706,
+      "sha256": "e24b7065af82eab5638f1fcdeb627d497391a2f1e9ba19801827d1db3a6d8c2d"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/prepare_pet_run.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/prepare_pet_run.py",
+      "bytes": 51327,
+      "sha256": "cf806ef4bed67b6ca0a568fdc3a47b178272a82d1ce5949ebc2b3c59e4f253d9"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/render_animation_previews.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/render_animation_previews.py",
+      "bytes": 2549,
+      "sha256": "5fe50707052f815964cc5bfc35addc79b2d55f3331fc7562645e56835211a400"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/validate_atlas.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/validate_atlas.py",
+      "bytes": 10678,
+      "sha256": "cd28f7e3ed4fc7d879239cbf4d4a5ae1fb603f457b14560ef2c8e15899507b6b"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/validate_direction_blind_verdicts.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/validate_direction_blind_verdicts.py",
+      "bytes": 3836,
+      "sha256": "7871667432918e0ffcdbb9beaf88a01c0af4b9e2809c5000f7b533a9ddc6e13d"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/create-pet/scripts/validate_pet_quality.py",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/create-pet/scripts/validate_pet_quality.py",
+      "bytes": 12965,
+      "sha256": "2e83db1c5a2a16d4ddc3ef22c4c9856310c438a8426bad99f962f99e9597e555"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/pets/SKILL.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/pets/SKILL.md",
+      "bytes": 3552,
+      "sha256": "1bf5d45fd6a6390aab777229293fb05cef7cf898aac882f8955e40c378e52fcd"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/pets/agents/openai.yaml",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/pets/agents/openai.yaml",
+      "bytes": 204,
+      "sha256": "2570b140c41a0080edcdb323235690ae8f18b0e3c40dbe08a7dc57ce006b8cf2"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/update-pet/SKILL.md",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/update-pet/SKILL.md",
+      "bytes": 4272,
+      "sha256": "c63c98d67b6ad781a72a8f9837ba1fb5e2d2a8054a2562e4025890a97d8a0e67"
+    },
+    {
+      "path": "skills/plugins/codex/work-pets-0.1.6/update-pet/agents/openai.yaml",
+      "source": "/root/.codex/plugins/cache/openai-curated-remote/work-pets/0.1.6/skills/update-pet/agents/openai.yaml",
+      "bytes": 220,
+      "sha256": "b031edf7b860302fc56ff938ee90906dd09e9d6c3e44447847a068417eaf80b9"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/brainstorming/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/brainstorming/SKILL.md",
+      "bytes": 17548,
+      "sha256": "a32d2255354775aa124855aa7100cf276bea096fff4ebb3a0edf57be216e6c72"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/brainstorming/scripts/frame-template.html",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/brainstorming/scripts/frame-template.html",
+      "bytes": 8094,
+      "sha256": "6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/brainstorming/scripts/helper.js",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/brainstorming/scripts/helper.js",
+      "bytes": 5615,
+      "sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/brainstorming/scripts/server.cjs",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/brainstorming/scripts/server.cjs",
+      "bytes": 25693,
+      "sha256": "2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/brainstorming/scripts/start-server.sh",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/brainstorming/scripts/start-server.sh",
+      "bytes": 6908,
+      "sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/brainstorming/scripts/stop-server.sh",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/brainstorming/scripts/stop-server.sh",
+      "bytes": 3263,
+      "sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/brainstorming/spec-document-reviewer-prompt.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/brainstorming/spec-document-reviewer-prompt.md",
+      "bytes": 1747,
+      "sha256": "95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/brainstorming/visual-companion.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/brainstorming/visual-companion.md",
+      "bytes": 13413,
+      "sha256": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/SKILL.md",
+      "bytes": 6904,
+      "sha256": "5a652f8132cc901eb5ca61f89157839f87a2f20aed037fc7a2b51051bc37cd19"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/analyst-common.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/analyst-common.md",
+      "bytes": 1582,
+      "sha256": "88801c36070be2a54a8a9a29632b01ab21db053e2e76ee49b5252a9b74ca4090"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/cost-and-time.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/cost-and-time.md",
+      "bytes": 1640,
+      "sha256": "fe97a66d4db3b436816ef82694bda413b522b3a862dd41978da01e358fffecc4"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/plan-adherence.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/plan-adherence.md",
+      "bytes": 1637,
+      "sha256": "1dcbab82033598a2e9c9ee42e950d4b1822d2c871c02cef9e102cdd5cbbda113"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/quality-evidence.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/quality-evidence.md",
+      "bytes": 1476,
+      "sha256": "749d11cf678f379ed77a29274cad456634e0284aa523639a1a214a9f2b986eb1"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/repeated-work.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/repeated-work.md",
+      "bytes": 1469,
+      "sha256": "895027f2dfa4b1b8bcdb7ac9aec8d45a80bff212fad6ec6cad5ab38fa68322f5"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/request-conflicts.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/request-conflicts.md",
+      "bytes": 1011,
+      "sha256": "e800e38d8b7752c212c76c5c3ed75cd78b749684263ea0c313586f26af6f4b5c"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/scrub-audit.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/scrub-audit.md",
+      "bytes": 1363,
+      "sha256": "5cc48f05a7f81f5f7e05e0c7ceafc0fb8774bcaf75fe88dcb5c7e408026c70ad"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/scrub.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/scrub.md",
+      "bytes": 1471,
+      "sha256": "854cb3320cc5377b493cea2f72519d67983464882db68a0f408a7d0a0f040b8c"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/similar-session.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/similar-session.md",
+      "bytes": 1711,
+      "sha256": "b190f713b463df2bb5ec3914647e204074d1bd50643a53159db6d13cace916c1"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/skill-timeline.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/skill-timeline.md",
+      "bytes": 1646,
+      "sha256": "45d604d583b57a77b9033eced8eb875ef342af70fcd66cf7d15c6dc89964890f"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/prompts/stumbles.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/prompts/stumbles.md",
+      "bytes": 1330,
+      "sha256": "1f2d1f048aff7b8b400006301f1ce8c232ecc7e9d5f705af27a849b2c03ea2e7"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/references/context-safety.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/references/context-safety.md",
+      "bytes": 990,
+      "sha256": "e6be2bd3495f454d4bedee9484d728d245d1fa656e11fc4ceec5693c16e4730a"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/references/github-issues.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/references/github-issues.md",
+      "bytes": 1644,
+      "sha256": "a656f5e15b21c7a200c39c038f5ede74b9d6ea3ceeb90f39af7e930c8d8424d6"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/references/redaction-policy.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/references/redaction-policy.md",
+      "bytes": 2243,
+      "sha256": "96b16f47074838fe2d7e609577d6f8b0ad460f8378b281a3f96ee23cb5a08bde"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/references/session-discovery.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/references/session-discovery.md",
+      "bytes": 1859,
+      "sha256": "6d1dced083e5d978448a78df298cf515531b0eb39b2854a4a2afbffeb69a7435"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/templates/bundle-README.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/templates/bundle-README.md",
+      "bytes": 3672,
+      "sha256": "2e6ddc6b106028d5ebd00a50ad93a77111d675c219ee1273cd0857869e8d51ec"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/templates/case.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/templates/case.md",
+      "bytes": 2983,
+      "sha256": "597892462be83bc478536ec91f7c285f6dd25d119c560734a3a180fe8471301d"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/templates/issue.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/templates/issue.md",
+      "bytes": 1851,
+      "sha256": "8f28dbfe60602f77dda76d81815cb4e2dce7d3e2a93348890e1581be8310ac1f"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/diagnosing-superpowers/templates/report.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/diagnosing-superpowers/templates/report.md",
+      "bytes": 2359,
+      "sha256": "38295d0fd785e8608f330815c59ebd7047942002ec7085aecbed54681f56b0c1"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/dispatching-parallel-agents/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/dispatching-parallel-agents/SKILL.md",
+      "bytes": 6078,
+      "sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/executing-plans/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/executing-plans/SKILL.md",
+      "bytes": 20405,
+      "sha256": "f38e8f2ddcf079f65493adc713c1fed78421dfaf5f4dbf6b3a6b2b1d95466e71"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/executing-plans/scripts/task-done",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/executing-plans/scripts/task-done",
+      "bytes": 1670,
+      "sha256": "f704dc216e0602f95c601b9ee1113c9a55cc1c5f6e4d149dddfba0fd3ad1c314"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/executing-plans/scripts/task-start",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/executing-plans/scripts/task-start",
+      "bytes": 963,
+      "sha256": "f833693c8fce3700fc9f841562d80f8015cd40f652c168a3405ac3e46947a1fe"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/finishing-a-development-branch/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/finishing-a-development-branch/SKILL.md",
+      "bytes": 7781,
+      "sha256": "8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/receiving-code-review/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/receiving-code-review/SKILL.md",
+      "bytes": 6203,
+      "sha256": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/requesting-code-review/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/requesting-code-review/SKILL.md",
+      "bytes": 2977,
+      "sha256": "cfcee1b06774e7c0517f1e09be1a11f2d5680257072723e709ddbcf7e08b795a"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/requesting-code-review/code-reviewer.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/requesting-code-review/code-reviewer.md",
+      "bytes": 6449,
+      "sha256": "82e370be6b3447523816286195571e4216ba56ba1ad6ad0e87862294c4c78dcb"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/subagent-driven-development/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/subagent-driven-development/SKILL.md",
+      "bytes": 32577,
+      "sha256": "8dde5589ee083fb4999106d116f01c8fdaf3116a8a9813fdedeb80329de49046"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/subagent-driven-development/implementer-prompt.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/subagent-driven-development/implementer-prompt.md",
+      "bytes": 6335,
+      "sha256": "81dd9d5a3fb0b09b96b5829f03b9796842f3199ef7591d1ba1c2db2a515f64d0"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/subagent-driven-development/re-review-prompt.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/subagent-driven-development/re-review-prompt.md",
+      "bytes": 4761,
+      "sha256": "0828a5e9cbb12ba49f14621dd8c3953c48c0fc383e75bb5494f055ed0d6d824f"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/subagent-driven-development/scripts/review-package",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/subagent-driven-development/scripts/review-package",
+      "bytes": 2029,
+      "sha256": "f9275175b2276b1d5fdb1bae0bedaadd2a950659b7c6f311ea37ff85e1861b1f"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/subagent-driven-development/scripts/sdd-workspace",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/subagent-driven-development/scripts/sdd-workspace",
+      "bytes": 3265,
+      "sha256": "75ca46c756ba4209ca36e0d3d65567257ceb33bc7a6775b9dad946707cb3bd7b"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/subagent-driven-development/scripts/task-brief",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/subagent-driven-development/scripts/task-brief",
+      "bytes": 1322,
+      "sha256": "cc563538e09abf719b34ddf4b2fa7a65cf3b301729039dbfa923cb060f729146"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/subagent-driven-development/task-reviewer-prompt.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/subagent-driven-development/task-reviewer-prompt.md",
+      "bytes": 9031,
+      "sha256": "bfed55c8f19d0ff6ed57b0fe09127c92890e9311c6c73917129598826bf9ebe8"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/CREATION-LOG.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/CREATION-LOG.md",
+      "bytes": 4257,
+      "sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/SKILL.md",
+      "bytes": 9465,
+      "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/condition-based-waiting-example.ts",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/condition-based-waiting-example.ts",
+      "bytes": 5054,
+      "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/condition-based-waiting.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/condition-based-waiting.md",
+      "bytes": 3516,
+      "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/defense-in-depth.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/defense-in-depth.md",
+      "bytes": 3650,
+      "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/find-polluter.sh",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/find-polluter.sh",
+      "bytes": 1986,
+      "sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/root-cause-tracing.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/root-cause-tracing.md",
+      "bytes": 5321,
+      "sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/test-academic.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/test-academic.md",
+      "bytes": 653,
+      "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/test-pressure-1.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/test-pressure-1.md",
+      "bytes": 1900,
+      "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/test-pressure-2.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/test-pressure-2.md",
+      "bytes": 2283,
+      "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/systematic-debugging/test-pressure-3.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/systematic-debugging/test-pressure-3.md",
+      "bytes": 2692,
+      "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/test-driven-development/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/test-driven-development/SKILL.md",
+      "bytes": 9578,
+      "sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/test-driven-development/writing-good-tests.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/test-driven-development/writing-good-tests.md",
+      "bytes": 8268,
+      "sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/using-git-worktrees/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/using-git-worktrees/SKILL.md",
+      "bytes": 6813,
+      "sha256": "8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/using-superpowers/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/using-superpowers/SKILL.md",
+      "bytes": 3192,
+      "sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/using-superpowers/references/antigravity-tools.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/using-superpowers/references/antigravity-tools.md",
+      "bytes": 1495,
+      "sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/using-superpowers/references/claude-code-tools.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/using-superpowers/references/claude-code-tools.md",
+      "bytes": 1469,
+      "sha256": "21479a3fee27448cab8748a3b5687e53bb257883bda9c070426f9a1ab5cebf1b"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/using-superpowers/references/codex-tools.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/using-superpowers/references/codex-tools.md",
+      "bytes": 4762,
+      "sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/using-superpowers/references/gemini-tools.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/using-superpowers/references/gemini-tools.md",
+      "bytes": 4598,
+      "sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/using-superpowers/references/hermes-tools.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/using-superpowers/references/hermes-tools.md",
+      "bytes": 1964,
+      "sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/using-superpowers/references/muse-tools.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/using-superpowers/references/muse-tools.md",
+      "bytes": 1908,
+      "sha256": "5a1da5c575fe18456ca71cd47ebfd8a38c745f8d82a67fe64d5b83080000eeb3"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/using-superpowers/references/pi-tools.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/using-superpowers/references/pi-tools.md",
+      "bytes": 1242,
+      "sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/verification-before-completion/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/verification-before-completion/SKILL.md",
+      "bytes": 3646,
+      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/writing-plans/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/writing-plans/SKILL.md",
+      "bytes": 9092,
+      "sha256": "0bc3d36590f7b2c323ed3ec18ff77e9f8ed57af42f5680a02b11a2d20de265cf"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/writing-plans/plan-document-reviewer-prompt.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/writing-plans/plan-document-reviewer-prompt.md",
+      "bytes": 1713,
+      "sha256": "aa728b96aad603c8be28875a4305637f6c984aa81ffcadcb13e743202fa2a0c7"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/writing-skills/SKILL.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/writing-skills/SKILL.md",
+      "bytes": 26623,
+      "sha256": "bbdfe742f853562e643a3d40d64476359d47881e39cef80a189283fa26d11ab9"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/writing-skills/anthropic-best-practices.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/writing-skills/anthropic-best-practices.md",
+      "bytes": 46197,
+      "sha256": "217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/writing-skills/examples/CLAUDE_MD_TESTING.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/writing-skills/examples/CLAUDE_MD_TESTING.md",
+      "bytes": 5423,
+      "sha256": "0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/writing-skills/graphviz-conventions.dot",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/writing-skills/graphviz-conventions.dot",
+      "bytes": 5970,
+      "sha256": "e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/writing-skills/persuasion-principles.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/writing-skills/persuasion-principles.md",
+      "bytes": 5901,
+      "sha256": "a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/writing-skills/render-graphs.js",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/writing-skills/render-graphs.js",
+      "bytes": 4968,
+      "sha256": "c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196"
+    },
+    {
+      "path": "skills/plugins/claude/superpowers-6.4.1/writing-skills/testing-skills-with-subagents.md",
+      "source": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/6.4.1/skills/writing-skills/testing-skills-with-subagents.md",
+      "bytes": 12558,
+      "sha256": "c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade"
+    },
+    {
+      "path": "skills/plugins/claude/codex-1.0.6/codex-cli-runtime/SKILL.md",
+      "source": "/root/.claude/plugins/cache/openai-codex/codex/1.0.6/skills/codex-cli-runtime/SKILL.md",
+      "bytes": 3097,
+      "sha256": "cce11c3bd6d7b5ec6277b3527e65ff38c5bd16084b436bf2870fabb30414359c"
+    },
+    {
+      "path": "skills/plugins/claude/codex-1.0.6/codex-result-handling/SKILL.md",
+      "source": "/root/.claude/plugins/cache/openai-codex/codex/1.0.6/skills/codex-result-handling/SKILL.md",
+      "bytes": 1731,
+      "sha256": "99fcbbebaeac1e1504b8adfba513bd5964e171414f6709034f3f980a1f2385a8"
+    },
+    {
+      "path": "skills/plugins/claude/codex-1.0.6/gpt-5-4-prompting/SKILL.md",
+      "source": "/root/.claude/plugins/cache/openai-codex/codex/1.0.6/skills/gpt-5-4-prompting/SKILL.md",
+      "bytes": 3644,
+      "sha256": "48222490b629e0e5cf7372253b864cc03b7780ce7afeaab4129f3dd2efdbf5d9"
+    },
+    {
+      "path": "skills/plugins/claude/codex-1.0.6/gpt-5-4-prompting/references/codex-prompt-antipatterns.md",
+      "source": "/root/.claude/plugins/cache/openai-codex/codex/1.0.6/skills/gpt-5-4-prompting/references/codex-prompt-antipatterns.md",
+      "bytes": 1490,
+      "sha256": "ebf38d5d60244b0b80a35734d76a4c452abf96e9f1e4a4b8be78aa13a1ab2ab9"
+    },
+    {
+      "path": "skills/plugins/claude/codex-1.0.6/gpt-5-4-prompting/references/codex-prompt-recipes.md",
+      "source": "/root/.claude/plugins/cache/openai-codex/codex/1.0.6/skills/gpt-5-4-prompting/references/codex-prompt-recipes.md",
+      "bytes": 4175,
+      "sha256": "fcc000e51cb967731c1b667fe27d024b0c51158a0d5d692792b23e6b46172331"
+    },
+    {
+      "path": "skills/plugins/claude/codex-1.0.6/gpt-5-4-prompting/references/prompt-blocks.md",
+      "source": "/root/.claude/plugins/cache/openai-codex/codex/1.0.6/skills/gpt-5-4-prompting/references/prompt-blocks.md",
+      "bytes": 4160,
+      "sha256": "9df47d9ac08c28c6ae302febc2b788cf6105ca18998a9649d7c8ccd816a047e9"
+    }
+  ]
+}

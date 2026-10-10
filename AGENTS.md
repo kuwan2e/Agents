@@ -1,0 +1,17 @@
+## Rules
+- Always download checkpoints to /workspace/checkpoints
+- Always use conda to manage Python environments. One project One environment. Always check if there are some submodules, use git.
+- Always install DeepLearning tools(pytorch, tensorflow ...) with cuda. Note that default cuda version is 12.4. You can also switch to /workspace/cuda-11.8.
+- When preprocess dataset, do NOT delete any raw data of dataset.
+- When Configure Python environment and run a demo, do NOT edit any raw code of project. But you can edit after I allow.
+- All Results/Outputs should be saved to a sub folder of project path.
+- Remember you can use 4x A100 GPUs. Consider multi-gpu Training/Inference.
+- Before run code, check conda environments to find if there is an existing env for code. Also check if I have accessible GPUs. If not, tell me. Do not run any deeplearning code with cpu.
+- When I want to download something, just download it whatever the size it is. And remember to use nohup with log.
+- Always tell me after you use any command include python, bash, etc...
+- Always use offline rendering. There is no GUI on this server.
+- Never edit files which not in project path.
+- Do NOT use fallback.
+- Update the git version every time the code changes more than 100 lines. Use git commit.
+- When I don't specifically emphasize which directory's code to run, we now run the code of whichever project we are under, regardless of the data path.
+- Do NOT do too many test. I need experiment, not test.
