@@ -10,7 +10,7 @@
 - When I want to download something, just download it whatever the size it is. And remember to use nohup with log.
 - Always tell me after you use any command include python, bash, etc...
 - Always use offline rendering. There is no GUI on this server.
-- Never edit files which not in project path.
+- Never edit files outside the project path, except files in directories pointed to by symbolic links within the project path.
 - Do NOT use fallback.
 - Update the git version every time the code changes more than 100 lines. Use git commit.
 - When I don't specifically emphasize which directory's code to run, we now run the code of whichever project we are under, regardless of the data path.
@@ -19,7 +19,7 @@
 
 My expensive resource is not output volume, it is **assistant turn count × current context size**. Every turn costs the full context, so the fix is fewer turns in a big context — not shorter answers.
 
-**Delegate to Claude (use the `codex-delegate` skill for the full workflow) whenever the task is:**
+**Delegate to Codex (use the `codex-delegate` skill for the full workflow) whenever the task is:**
 - running an experiment, training, or inference
 - writing a script and then iterating on it until it runs
 - building an HTML/JS visualization or viewer
@@ -34,7 +34,13 @@ Invoke Codex with `codex exec` directly. **Do not use `/codex:rescue` or `codex-
 
 Before delegating, write an **execution contract** to a file: goal, code root, inputs, output paths, conda env, GPUs, steps, objective success criteria, and an explicit failure path ("on error, retry N times, then stop and write BLOCKED.md — do not improvise"). Codex starts fresh and has none of this session's reasoning, but it also has none of this session's bloat.
 
-Long jobs: launch under `nohup` with a log file, record the PID, and **do not poll in a loop** — move on or end the turn. Collect later with `tail -40 codex.log` and `cat CODEX_REPLY.md`. Always pass `--output-last-message <FILE>` so Codex's final answer lands on disk instead of in my context. Follow-up fixes use `codex exec resume --last`; unrelated new work starts a fresh `codex exec`.
+**Every code change requires a Codex handoff and Claude review.** Include the intended design, allowed scope, acceptance criteria, and handoff requirements in each contract, including follow-up fixes. Codex must record the pre-edit baseline and existing user changes, then report in `CODEX_REPLY.md`: every added/modified/deleted file with relevant symbols or lines; what changed, why, and which requirement it implements; how to locate the complete diff, including committed and new files; commands/checks and actual results; checks not run, deviations, risks, and blockers. If no code changed, say so explicitly.
+
+**Claude must inspect the actual diff and relevant surrounding code before accepting the result.** Compare it with the delegated task's design, scope, and acceptance criteria; cover committed, staged, unstaged, and new files without attributing pre-existing user edits to Codex. A Codex summary, successful exit, or passing check alone is not approval. Use only necessary focused validation. Record Claude's own verdict (`PASS`, `NEEDS_CHANGES`, or `BLOCKED`), reviewed revision/diff, evidence, limits, and file/line findings in the task's `CLAUDE_REVIEW.md`.
+
+**Review failures go back to Codex for correction and another review.** Resume the specific task session with concrete findings and expected behavior, require an updated change report, and review again after every code-changing repair. Stop at the contract's retry limit or a blocker; report any needed design decision instead of silently changing the design or acceptance criteria. Only Claude's `PASS` on the current code permits reporting the task complete; otherwise state that it is awaiting review, needs changes, or is blocked. Tell the user what changed and the review/validation result.
+
+Long jobs: launch under `nohup` with a log file, record the PID, and **do not poll in the main conversation**. Immediately attach a one-shot watcher using `Bash` with `run_in_background: true`; wait for the exact job to exit and report its exit status. Treat `CODEX_REPLY.md` as a reply, not proof of task success; read `BLOCKED.md`, logs, and check the contract's acceptance criteria. The watcher is session-scoped and best-effort, so keep durable job metadata and reconcile outstanding jobs when a new session starts. Always pass `--output-last-message <FILE>` and redirect stdout/stderr to a log, so only a compact result enters the main context. Follow-up fixes resume the specific Codex session ID; unrelated new work starts a fresh `codex exec`. Never bypass a denied tool action through a delegate.
 
 **Session boundaries matter as much as delegation.** Start a new session per phase — reading a report, surveying literature, running experiments, and building a viewer are unrelated topics, and carrying them together makes every turn pay for all of them. Before switching, write the conclusions into `MEMORY.md`, then tell me the phase is done and suggest `/clear`. Past roughly 150K context, or past ~40 assistant turns on one topic, the next phase belongs in a fresh session.
 
