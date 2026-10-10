@@ -57,13 +57,13 @@
   ],
   "fileCount": 398,
   "skillCount": 49,
-  "totalBytes": 2410139,
+  "totalBytes": 2411853,
   "files": [
     {
       "path": "CLAUDE.md",
       "source": "/root/.claude/CLAUDE.md",
-      "bytes": 3669,
-      "sha256": "396a4833cde041d08c7f8cdcf8f2d5aa34f4a21b4f0116b531517c1ee6087b9e"
+      "bytes": 4091,
+      "sha256": "7a7f2050a763a0d2572c734413b9e1e5198b99c456d3b2ec47774a427dc34d57"
     },
     {
       "path": "AGENTS.md",
@@ -488,8 +488,8 @@
     {
       "path": "skills/claude/codex-delegate/SKILL.md",
       "source": "/root/.claude/skills/codex-delegate/SKILL.md",
-      "bytes": 7494,
-      "sha256": "ea50bead01d6df7b857b2a1e53bf92ca398b51f41a6d21a0ba29d8e63eb2e54a"
+      "bytes": 8786,
+      "sha256": "a239a33a7de10a663a61ffb7be34bc31a0dabeae1b81eb741085dab4326c4a1e"
     },
     {
       "path": "skills/claude/planning-with-files/SKILL.md",
@@ -2447,5 +2447,6 @@
       "bytes": 4160,
       "sha256": "9df47d9ac08c28c6ae302febc2b788cf6105ca18998a9649d7c8ccd816a047e9"
     }
-  ]
+  ],
+  "updatedAt": "2026-10-10T03:33:33.386Z"
 }

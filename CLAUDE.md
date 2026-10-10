@@ -30,9 +30,11 @@ My expensive resource is not output volume, it is **assistant turn count × curr
 
 **Keep it yourself:** deciding *what* to run and *why*, interpreting results, judging whether a difference matters, priorities and tradeoffs, planning, and anything requiring my input.
 
-Before delegating, write an **execution contract** to a file: goal, code root, inputs, output paths, conda env, GPUs, steps, objective success criteria, and an explicit failure path ("on error, retry N times, then stop and write BLOCKED.md — do not improvise"). Claude starts fresh and has none of this session's reasoning, but it also has none of this session's bloat.
+Invoke Codex with `codex exec` directly. **Do not use `/codex:rescue` or `codex-companion.mjs`** — they hardcode the `workspace-write` sandbox, which needs bubblewrap and fails here with `bwrap: No permissions to create a new namespace`. Plain `codex exec` reads my `~/.codex/config.toml` (`sandbox_mode = "danger-full-access"`) and never touches bwrap. This is verified working.
 
-Long jobs: launch with `--background`, record the jobId, and **do not poll in a loop** — move on or end the turn. Collect later with `/codex:status <jobId>` and `/codex:result <jobId>`, reading the summary and output files rather than pasting the whole result back into context. Follow-up fixes use `--resume-last`; unrelated new work uses `--fresh`.
+Before delegating, write an **execution contract** to a file: goal, code root, inputs, output paths, conda env, GPUs, steps, objective success criteria, and an explicit failure path ("on error, retry N times, then stop and write BLOCKED.md — do not improvise"). Codex starts fresh and has none of this session's reasoning, but it also has none of this session's bloat.
+
+Long jobs: launch under `nohup` with a log file, record the PID, and **do not poll in a loop** — move on or end the turn. Collect later with `tail -40 codex.log` and `cat CODEX_REPLY.md`. Always pass `--output-last-message <FILE>` so Codex's final answer lands on disk instead of in my context. Follow-up fixes use `codex exec resume --last`; unrelated new work starts a fresh `codex exec`.
 
 **Session boundaries matter as much as delegation.** Start a new session per phase — reading a report, surveying literature, running experiments, and building a viewer are unrelated topics, and carrying them together makes every turn pay for all of them. Before switching, write the conclusions into `MEMORY.md`, then tell me the phase is done and suggest `/clear`. Past roughly 150K context, or past ~40 assistant turns on one topic, the next phase belongs in a fresh session.
 
