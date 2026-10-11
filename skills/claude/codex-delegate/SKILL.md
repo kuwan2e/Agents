@@ -18,8 +18,15 @@ own budget.
 Call the CLI:
 
 ```bash
-codex exec [OPTIONS] <PROMPT>
+codex exec -m gpt-6-astra -c 'model_reasoning_effort="xhigh"' [OPTIONS] <PROMPT>
 ```
+
+**Required model for Claude delegation: `gpt-6-astra`, reasoning effort `xhigh`.**
+Explicitly pass `-m gpt-6-astra -c 'model_reasoning_effort="xhigh"'` on every
+`codex exec` and `codex exec resume` invocation, including background jobs, retries, and
+review fixes. Include both options even when the user config or resumed session already
+has these values. If unavailable, report the blocker; do not silently change the model
+or lower the effort.
 
 **Do not route through `codex-companion.mjs`** (the `/codex:rescue` path). It hardcodes
 `sandbox: request.write ? "workspace-write" : "read-only"`. Codex's `workspace-write`
@@ -74,6 +81,7 @@ One sentence. What must be true when this is done.
 - Outputs go to: /abs/path/outputs/<name>/   (create it; do not write elsewhere)
 
 # Environment
+- Codex: gpt-6-astra, reasoning effort xhigh (explicit CLI options on every invocation)
 - conda env: <name>   (verify with `conda env list` before assuming)
 - GPUs: use <which>; do not run DL code on CPU
 - Launch long runs with nohup + a log file, never blocking
@@ -119,7 +127,8 @@ Write it to a file. Passing a long prompt as a shell argument invites escaping b
 the file is itself a reusable artifact:
 
 ```bash
-codex exec -C /abs/path --skip-git-repo-check - < /abs/path/contract.md
+codex exec -C /abs/path --skip-git-repo-check \
+  -m gpt-6-astra -c 'model_reasoning_effort="xhigh"' - < /abs/path/contract.md
 ```
 
 ## Three recipes
@@ -128,6 +137,7 @@ codex exec -C /abs/path --skip-git-repo-check - < /abs/path/contract.md
 
 ```bash
 codex exec -C /abs/path --skip-git-repo-check \
+  -m gpt-6-astra -c 'model_reasoning_effort="xhigh"' \
   --output-last-message /abs/path/outputs/<name>/CODEX_REPLY.md \
   - < /abs/path/contract.md
 ```
@@ -140,6 +150,7 @@ optimization in this skill.
 
 ```bash
 cd /abs/path && nohup codex exec -C /abs/path --skip-git-repo-check \
+  -m gpt-6-astra -c 'model_reasoning_effort="xhigh"' \
   --output-last-message /abs/path/outputs/<name>/CODEX_REPLY.md \
   - < /abs/path/contract.md > /abs/path/outputs/<name>/codex.log 2>&1 &
 CODEX_PID=$!
@@ -193,6 +204,7 @@ while a job runs (it caps at 30 minutes). For a single completion signal, backgr
 
 ```bash
 cd /abs/path && codex exec resume '<SESSION_ID>' \
+  -m gpt-6-astra -c 'model_reasoning_effort="xhigh"' \
   --output-last-message /abs/path/outputs/<name>/CODEX_REPLY.md \
   - < /abs/path/outputs/<name>/review-fixes.md
 ```
@@ -254,8 +266,8 @@ briefly state what changed, Claude's review conclusion, and any validation limit
 | `--json` | JSONL events, when you need to parse results |
 | `--output-schema <FILE>` | force a JSON-schema-shaped final answer |
 | `--add-dir <DIR>` | extra writable directories |
-| `-c key=value` | override any config.toml value for this run |
-| `-m, --model <MODEL>` | e.g. `gpt-6-astra` (the configured default) |
+| `-c key=value` | override config for this run; always include `-c 'model_reasoning_effort="xhigh"'` |
+| `-m, --model <MODEL>` | always pass `-m gpt-6-astra` for Claude-delegated tasks |
 
 Do **not** pass `-s danger-full-access` — config.toml already sets it, and being explicit
 invites questions about whether the default was deliberate.
