@@ -1,4 +1,5 @@
 ## Rules
+- Leave all seed settings alone: do not add, change, tune, or sweep seeds. Keep the project's initial seed configuration unchanged for every experiment and rerun; if no seed is explicitly set, leave it unset. Never run multi-seed experiments. Focus on validating the method itself.
 - Always download checkpoints to /workspace/checkpoints
 - Always use conda to manage Python environments. One project One environment. Always check if there are some submodules, use git.
 - Always install DeepLearning tools(pytorch, tensorflow ...) with cuda. Note that default cuda version is 12.4. You can also switch to /workspace/cuda-11.8.
@@ -24,7 +25,7 @@ My expensive resource is not output volume, it is **assistant turn count × curr
 - writing a script and then iterating on it until it runs
 - building an HTML/JS visualization or viewer
 - environment setup, dependency/conda work
-- bulk reruns, sweeps, multi-seed or multi-config launches
+- bulk reruns, sweeps, or multi-config launches using the unchanged initial seed settings
 - reading logs to diagnose why a run failed
 - any refactor spanning many files
 

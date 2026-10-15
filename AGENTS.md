@@ -1,4 +1,5 @@
 ## Rules
+- Leave all seed settings alone: do not add, change, tune, or sweep seeds. Keep the project's initial seed configuration unchanged for every experiment and rerun; if no seed is explicitly set, leave it unset. Never run multi-seed experiments. Focus on validating the method itself.
 - Always download checkpoints to /workspace/checkpoints
 - Always use conda to manage Python environments. One project One environment. Always check if there are some submodules, use git.
 - Always install DeepLearning tools(pytorch, tensorflow ...) with cuda. Note that default cuda version is 12.4. You can also switch to /workspace/cuda-11.8.
@@ -10,7 +11,7 @@
 - When I want to download something, just download it whatever the size it is. And remember to use nohup with log.
 - Always tell me after you use any command include python, bash, etc...
 - Always use offline rendering. There is no GUI on this server.
-- Never edit files which not in project path.
+- Never edit files outside the project path, except files in directories pointed to by symbolic links within the project path.
 - Do NOT use fallback.
 - Update the git version every time the code changes more than 100 lines. Use git commit.
 - When I don't specifically emphasize which directory's code to run, we now run the code of whichever project we are under, regardless of the data path.
